@@ -1,0 +1,13 @@
+#!/bin/sh
+
+CODA="Coda 2"
+SETTING_FILE=${HOME}/.coda_difftool
+
+if [ ! -f ${SETTING_FILE} ]; then
+	echo '# Diff Path'        >  ${SETTING_FILE}
+	echo 'DIFF='`which diff`  >> ${SETTING_FILE}
+	echo '# Diff Option'      >> ${SETTING_FILE}
+	echo 'DIFF_OPT='          >> ${SETTING_FILE}
+fi
+
+open -a "${CODA}" ${SETTING_FILE}

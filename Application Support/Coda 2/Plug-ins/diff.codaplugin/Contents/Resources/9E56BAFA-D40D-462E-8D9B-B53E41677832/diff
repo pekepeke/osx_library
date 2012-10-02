@@ -1,0 +1,43 @@
+#!/bin/sh
+################################
+
+# Setting file import
+IMPORT_FILE=${HOME}/.coda_difftool
+
+if [ -f "${IMPORT_FILE}" ]; then
+	source ${IMPORT_FILE}
+fi
+
+if [ -z "${DIFF}" ]; then
+	DIFF=diff
+	DIFF_OPT=-Naur
+fi
+
+PRG=`basename "${DIFF}"`
+
+TEMPFILE1=/tmp/${PRG}.1
+TEMPFILE2=/tmp/${PRG}.2
+
+if [ -n "${CODA_FILEPATH}" ]; then
+	if [ -f "${TEMPFILE1}" ]; then
+		if [ -f "${TEMPFILE2}" ]; then
+			rm -f ${TEMPFILE1} ${TEMPFILE2}
+		else
+			echo "${CODA_FILEPATH}" > ${TEMPFILE2}
+			${DIFF} ${DIFF_OPT} "`cat ${TEMPFILE1}`" "`cat ${TEMPFILE2}`"
+			rm ${TEMPFILE1} ${TEMPFILE2}
+		fi
+	else
+		if [ -f "${TEMPFILE2}" ]; then
+			rm ${TEMPFILE2}
+		fi
+		echo "${CODA_FILEPATH}" > ${TEMPFILE1}
+	fi
+else
+	if [ -f "${TEMPFILE1}" ]; then
+		rm ${TEMPFILE1}
+	fi
+	if [ -f "${TEMPFILE2}" ]; then
+		rm ${TEMPFILE2}
+	fi
+fi

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PluginActions</key>
+	<dict>
+		<key>Delete Lines</key>
+		<dict>
+			<key>action</key>
+			<string>LCDeleteLine</string>
+			<key>shortcut</key>
+			<string>^d</string>
+			<key>submenu</key>
+			<string>Lines</string>
+		</dict>
+		<key>Move Lines Up</key>
+		<dict>
+			<key>action</key>
+			<string>LCMoveLine</string>
+			<key>options</key>
+			<dict>
+				<key>direction</key>
+				<string>up</string>
+			</dict>
+			<key>shortcut</key>
+			<string>~</string>
+			<key>submenu</key>
+			<string>Lines</string>
+		</dict>
+		<key>Move Lines Down</key>
+		<dict>
+			<key>action</key>
+			<string>LCMoveLine</string>
+			<key>options</key>
+			<dict>
+				<key>direction</key>
+				<string>down</string>
+			</dict>
+			<key>shortcut</key>
+			<string>~</string>
+			<key>submenu</key>
+			<string>Lines</string>
+		</dict>
+<!--
+		<key>Move Words Left</key>
+		<dict>
+			<key>action</key>
+			<string>LCMoveWord</string>
+			<key>options</key>
+			<dict>
+				<key>direction</key>
+				<string>left</string>
+			</dict>
+			<key>shortcut</key>
+			<string>^~[</string>
+			<key>submenu</key>
+			<string>Lines</string>
+		</dict>
+		<key>Move Words Right</key>
+		<dict>
+			<key>action</key>
+			<string>LCMoveWord</string>
+			<key>options</key>
+			<dict>
+				<key>direction</key>
+				<string>right</string>
+			</dict>
+			<key>shortcut</key>
+			<string>^~]</string>
+			<key>submenu</key>
+			<string>Lines</string>
+		</dict>
+-->
+		<key>Duplicate Lines Up</key>
+		<dict>
+			<key>action</key>
+			<string>LCMoveLine</string>
+			<key>options</key>
+			<dict>
+				<key>direction</key>
+				<string>up</string>
+				<key>duplicate</key>
+				<true/>
+			</dict>
+			<key>shortcut</key>
+			<string>^~</string>
+			<key>submenu</key>
+			<string>Lines</string>
+		</dict>
+		<key>Duplicate Lines Down</key>
+		<dict>
+			<key>action</key>
+			<string>LCMoveLine</string>
+			<key>options</key>
+			<dict>
+				<key>direction</key>
+				<string>down</string>
+				<key>duplicate</key>
+				<true/>
+			</dict>
+			<key>shortcut</key>
+			<string>^~</string>
+			<key>submenu</key>
+			<string>Lines</string>
+		</dict>
+		<key>Insert Line Above</key>
+		<dict>
+			<key>action</key>
+			<string>LCInsertLine</string>
+			<key>options</key>
+			<dict>
+				<key>direction</key>
+				<string>up</string>
+			</dict>
+			<key>shortcut</key>
+			<string>^$</string>
+			<key>submenu</key>
+			<string>Lines</string>
+		</dict>
+		<key>Insert Line Below</key>
+		<dict>
+			<key>action</key>
+			<string>LCInsertLine</string>
+			<key>options</key>
+			<dict>
+				<key>direction</key>
+				<string>down</string>
+			</dict>
+			<key>shortcut</key>
+			<string>^$</string>
+			<key>submenu</key>
+			<string>Lines</string>
+		</dict>
+		<key>Yank Lines</key>
+		<dict>
+			<key>action</key>
+			<string>LCYankLine</string>
+			<key>shortcut</key>
+			<string>^y</string>
+			<key>submenu</key>
+			<string>Lines</string>
+		</dict>
+		<key>Put Lines</key>
+		<dict>
+			<key>action</key>
+			<string>LCPutLine</string>
+			<key>shortcut</key>
+			<string>^p</string>
+			<key>submenu</key>
+			<string>Lines</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

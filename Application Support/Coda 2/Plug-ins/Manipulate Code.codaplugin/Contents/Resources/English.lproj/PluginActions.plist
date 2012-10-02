@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PluginActions</key>
+	<dict>
+		<key>Align Operators</key>
+		<dict>
+			<key>action</key>
+			<string>AlignOperators</string>
+			<key>shortcut</key>
+			<string>~@]</string>
+			<key>submenu</key>
+			<string>Code</string>
+			<key>requireSelection</key>
+			<true/>
+		</dict>
+		<key>Trim Whitespace</key>
+		<dict>
+			<key>action</key>
+			<string>TrimTrailing</string>
+			<key>shortcut</key>
+			<string>~@k</string>
+			<key>submenu</key>
+			<string>Code</string>
+		</dict>
+		<key>Wrap Comment</key>
+		<dict>
+			<key>action</key>
+			<string>WrapComment</string>
+			<key>shortcut</key>
+			<string>~@/</string>
+			<key>submenu</key>
+			<string>Code</string>
+			<key>options</key>
+			<dict>
+				<key>width</key>
+				<integer>80</integer>
+				<key>min_width</key>
+				<integer>36</integer>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PluginActions</key>
+	<dict>
+		<key>Upper Case</key>
+		<dict>
+			<key>action</key>
+			<string>Capitalize</string>
+			<key>submenu</key>
+			<string>Case</string>
+		</dict>
+		<key>Lower Case</key>
+		<dict>
+			<key>action</key>
+			<string>Capitalize</string>
+			<key>options</key>
+			<dict>
+				<key>to_case</key>
+				<string>lower</string>
+			</dict>
+			<key>submenu</key>
+			<string>Case</string>
+		</dict>
+		<key>Title Case</key>
+		<dict>
+			<key>action</key>
+			<string>Capitalize</string>
+			<key>options</key>
+			<dict>
+				<key>to_case</key>
+				<string>title</string>
+			</dict>
+			<key>submenu</key>
+			<string>Case</string>
+		</dict>
+		<key>Sentence Case</key>
+		<dict>
+			<key>action</key>
+			<string>Capitalize</string>
+			<key>options</key>
+			<dict>
+				<key>to_case</key>
+				<string>sentence</string>
+			</dict>
+			<key>submenu</key>
+			<string>Case</string>
+		</dict>
+		<key>Invert Case</key>
+		<dict>
+			<key>action</key>
+			<string>Capitalize</string>
+			<key>options</key>
+			<dict>
+				<key>to_case</key>
+				<string>invert</string>
+			</dict>
+			<key>submenu</key>
+			<string>Case</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

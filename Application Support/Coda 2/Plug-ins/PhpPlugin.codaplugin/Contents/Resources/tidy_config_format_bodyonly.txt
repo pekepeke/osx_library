@@ -1,0 +1,33 @@
+// config file for Coda PHP Toolkit Tidy FORMAT script
+// http://www.chipwreck.de/blog/software/coda-php
+//
+// documentation is here: http://tidy.sourceforge.net/#docs
+// rev 5
+
+anchor-as-name: no
+doctype: omit
+drop-empty-paras: no
+fix-uri: no
+literal-attributes: yes
+merge-divs: no
+merge-spans: no
+numeric-entities: yes
+preserve-entities: yes
+quote-ampersand: no
+show-body-only: yes
+indent: auto
+indent-spaces: 4
+tab-size: 4
+wrap: 0
+wrap-asp: no
+wrap-jste: no
+wrap-php: yes
+wrap-sections: no
+tidy-mark: no
+new-blocklevel-tags: article,aside,command,canvas,dialog,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,meter 
+new-inline-tags: video,audio,canvas,ruby,rt,rp,time,meter,progress,datalist,keygen,mark,output,source,wbr
+
+// Change these if you need to debug a problem with Tidy
+force-output: yes
+quiet: yes
+show-warnings: yes

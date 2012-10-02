@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PluginActions</key>
+	<dict>
+		<key>HTML Encode</key>
+		<dict>
+			<key>action</key>
+			<string>HTMLEncode</string>
+ 			<key>submenu</key>
+ 			<string>Encoding</string>
+		</dict>
+		<key>HTML Unencode</key>
+		<dict>
+			<key>action</key>
+			<string>HTMLEncode</string>
+			<key>options</key>
+			<dict>
+				<key>decode</key>
+				<true/>
+			</dict>
+ 			<key>submenu</key>
+ 			<string>Encoding</string>
+		</dict>
+		<key>URL Encode</key>
+		<dict>
+			<key>action</key>
+			<string>URLEncode</string>
+ 			<key>submenu</key>
+ 			<string>Encoding</string>
+		</dict>
+		<key>URL Unencode</key>
+		<dict>
+			<key>action</key>
+			<string>URLEncode</string>
+			<key>options</key>
+			<dict>
+				<key>decode</key>
+				<true/>
+			</dict>
+ 			<key>submenu</key>
+ 			<string>Encoding</string>
+		</dict>
+		<key>Base 64 Encode</key>
+		<dict>
+			<key>action</key>
+			<string>Base64Encode</string>
+ 			<key>submenu</key>
+ 			<string>Encoding</string>
+		</dict>
+		<key>Base 64 Unencode</key>
+		<dict>
+			<key>action</key>
+			<string>Base64Encode</string>
+			<key>options</key>
+			<dict>
+				<key>decode</key>
+				<true/>
+			</dict>
+ 			<key>submenu</key>
+ 			<string>Encoding</string>
+		</dict>
+		<key>ROT13 Encode/Unencode</key>
+		<dict>
+			<key>action</key>
+			<string>ROT13Encode</string>
+ 			<key>submenu</key>
+ 			<string>Encoding</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

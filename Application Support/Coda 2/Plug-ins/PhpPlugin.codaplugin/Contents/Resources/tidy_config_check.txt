@@ -1,0 +1,11 @@
+// config file for Coda HTML Tidy CHECK script
+// http://www.chipwreck.de/blog/software/coda-php
+// rev 5
+
+// Change these if you need to debug a problem with Tidy
+output-html: yes
+new-blocklevel-tags: article,aside,command,canvas,dialog,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,meter 
+new-inline-tags: video,audio,canvas,ruby,rt,rp,time,meter,progress,datalist,keygen,mark,output,source,wbr
+quiet: no
+show-errors: 10
+show-warnings: yes
