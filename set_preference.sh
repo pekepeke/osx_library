@@ -1,7 +1,13 @@
 #!/bin/bash
 
 opt_apply=0
-APPLICATIONS="KeyRemap4MacBook GeekTool Spectacle"
+APPLICATIONS=$(cat <<EOM
+KeyRemap4MacBook
+GeekTool Helper
+Spectacle
+EOM
+)
+
 usage() {
   prg_name=`basename $0`
   cat <<EOM
@@ -21,9 +27,13 @@ ctl_applications() {
     cmd=open
     opt="-a"
   fi
-  for app in $APPLICATIONS; do
-    ${cmd} ${opt} ${app}
-  done
+  (
+    IFS=$'\n';
+    for app in $APPLICATIONS; do
+      echo ${cmd} ${opt} ${app}
+      ${cmd} ${opt} ${app}
+    done
+  )
 }
 
 yes_or_no() {
@@ -45,10 +55,15 @@ trace() {
 main() {
   cd $(dirname $0)
   local tm=$(date +'%S')
-  ctl_applications stop
+  if [ x$opt_apply = x1 ]; then
+    echo "#### Repos -> HOME"
+    ctl_applications stop
+  else
+    echo "#### HOME -> Repos"
+  fi
   for f in $(preferences); do
     local TARGET="$HOME/Library/$f"
-    if [ x$opt_apply = 1 ]; then
+    if [ x$opt_apply = x1 ]; then
       if yes_or_no "copy $f -> $TARGET" ; then
         cp -irp $TARGET /tmp/$(basename $TARGET).library
         [ ! -e $TARGET.org -a ! -L $TARGET ] && mv $TARGET $TARGET.org
@@ -61,17 +76,19 @@ main() {
       fi
     fi
   done
-  ctl_applications start
+  if [ x$opt_apply = x1 ]; then
+    ctl_applications start
+  fi
 }
 
-while getopts "hvs:" opt; do
+while getopts "ha" opt; do
   case $opt in
     h)
       usage ;;
     a) opt_apply=1;;
-    s)
-      #$OPTARG
-      ;;
+    #s)
+    #  $OPTARG
+    #  ;;
   esac
 done
 shift `expr $OPTIND - 1`
