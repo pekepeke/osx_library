@@ -17,6 +17,7 @@ EOM
 }
 
 preferences() {
+  echo "Application\ Support/BetterTouchTool/bttdata2"
   find "Preferences" -type f
 }
 
@@ -61,21 +62,24 @@ main() {
   else
     echo "#### HOME -> Repos"
   fi
-  for f in $(preferences); do
-    local TARGET="$HOME/Library/$f"
-    if [ x$opt_apply = x1 ]; then
-      if yes_or_no "copy $f -> $TARGET" ; then
-        cp -irp $TARGET /tmp/$(basename $TARGET).library
-        [ ! -e $TARGET.org -a ! -L $TARGET ] && mv $TARGET $TARGET.org
-        trace cp $f $TARGET
+  (
+    IFS=$'\n';
+    for f in $(preferences); do
+      local TARGET="$HOME/Library/$f"
+      if [ x$opt_apply = x1 ]; then
+        if yes_or_no "copy $f -> $TARGET" ; then
+          cp -irp $TARGET /tmp/$(basename $TARGET).library
+          [ ! -e $TARGET.org -a ! -L $TARGET ] && mv $TARGET $TARGET.org
+          trace cp $f $TARGET
+        fi
+      else
+        if yes_or_no "copy $TARGET -> $f" ; then
+          cp -irp $f /tmp/$(basename $f).github
+          trace cp $TARGET $f
+        fi
       fi
-    else
-      if yes_or_no "copy $TARGET -> $f" ; then
-        cp -irp $f /tmp/$(basename $f).github
-        trace cp $TARGET $f
-      fi
-    fi
-  done
+    done
+  )
   if [ x$opt_apply = x1 ]; then
     ctl_applications start
   fi

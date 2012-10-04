@@ -21,17 +21,28 @@ application_support_files() {
   find "Application Support" -depth 2
 }
 
+is_ignore() {
+  if [ $f = "Preferences" ] ; then
+    return 0
+  elif [ $f = "tools" ] ; then
+    return 0
+  elif [ $f = "QuickLook" ] ; then
+    return 0
+  elif [ $f = "Application Support/BetterTouchTool/bttdata2" ]; then
+    return 0
+  fi
+  return 1
+}
+
 other_files() {
   for f in $(ls .); do
     if [ $f = "Application Support" -o -f $f ]; then
       # echo "skip"
       continue
-    elif [ $f = "Preferences" ]; then
+    elif is_ignore $f; then
+      # do nothing
+      # echo "ignore $f"
       continue
-    elif [ $f = "tools" ]; then
-      continue
-    elif [ $f = "QuickLook" ] ; then
-      echo $f
     elif [ -d $f ]; then
       for fp in $(find $f -type f); do
         echo $fp
@@ -51,7 +62,7 @@ apply_file() {
   else
     if [ -e "$TARGET.org" ]; then
       echo "skip : $SRC"
-    else
+    elif [ ! -L $TARGET ]; then
       if [ -e "$TARGET" ]; then
         trace mv "$TARGET" "$TARGET.org"
       fi
