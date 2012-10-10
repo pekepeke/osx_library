@@ -165,3 +165,47 @@ class ArrayUtil {
 		return $arr;
 	}
 }
+
+class SQLUtil {
+	static function escape($s) {
+		if (is_null($s)) {
+			return "NULL";
+		} elseif (!is_numeric($s)) {
+			$s = "'" . str_replace("'", "''", $s) . "'";
+		}
+		return $s;
+	}
+
+	static function escapeAll($arr) {
+		return array_map(array('SQLUtil', 'escape'), $arr);
+	}
+
+	static function buildSetByValues($values) {
+		$lines = array();
+		foreach($values as $key => $val) {
+			$lines[] = sprintf('%s = %s', $key, self::escape($val));
+		}
+		return implode(", ", $lines);
+	}
+
+	static function buildWhere($header, $line) {
+		$lines = array();
+		foreach (array_combine($header, $line) as $key => $val) {
+			$lines[] = sprintf('%s = %s', $key, self::escape($val));
+		}
+		return implode(' AND ', $lines);
+	}
+
+	static function buildWhereByValues($values) {
+		$keys = array_filter(array_keys($values), array('SQLUtil', 'filterId'));
+		$lines = array();
+		foreach ($keys as $key) {
+			$lines[] = sprintf('%s = %s', $key, self::escape($values[$key]));
+		}
+		return implode(' AND ', $lines);
+	}
+
+	static function filterId($key) {
+		return preg_match('!id$!i', $key);
+	}
+}
