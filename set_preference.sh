@@ -12,6 +12,9 @@ usage() {
   prg_name=`basename $0`
   cat <<EOM
   Usage: $prg_name [-h]
+
+-h : help
+-a : apply
 EOM
   exit 1
 }

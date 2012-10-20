@@ -3,18 +3,25 @@
 GIT_URL="git://github.com/pekepeke/osx_library"
 LOCAL_DIR="$HOME/.osx_library"
 opt_uninstall=0
+opt_dry_run=0
 
 usage() {
   prg_name=`basename $0`
   cat <<EOM
   Usage: $prg_name [-h]
+
+-h : show help
+-u : uninstall
+-d : dry run
 EOM
   exit 1
 }
 
 trace() {
   echo $*
-  $*
+  if [ x$opt_dry_run = x0 ]; then
+    $*
+  fi
 }
 
 application_support_files() {
@@ -103,12 +110,14 @@ main() {
   cd $cwd
 }
 
-while getopts "hvu" opt; do
+while getopts "hvud" opt; do
   case $opt in
     h)
       usage ;;
     u)
       opt_uninstall=1;;
+    d)
+      opt_dry_run=1;;
     # v) ;;
     # s)
     #   #$OPTARG
