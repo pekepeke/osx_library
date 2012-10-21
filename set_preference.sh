@@ -20,7 +20,7 @@ EOM
 }
 
 preferences() {
-  echo "Application\ Support/BetterTouchTool/bttdata2"
+  echo "Application Support/BetterTouchTool/bttdata2"
   find "Preferences" -type f
 }
 
@@ -73,12 +73,12 @@ main() {
         if yes_or_no "copy $f -> $TARGET" ; then
           cp -irp $TARGET /tmp/$(basename $TARGET).library
           [ ! -e $TARGET.org -a ! -L $TARGET ] && mv $TARGET $TARGET.org
-          trace cp $f $TARGET
+          trace cp "$f" "$TARGET"
         fi
       else
         if yes_or_no "copy $TARGET -> $f" ; then
           cp -irp $f /tmp/$(basename $f).github
-          trace cp $TARGET $f
+          trace cp "$TARGET" "$f"
         fi
       fi
     done
