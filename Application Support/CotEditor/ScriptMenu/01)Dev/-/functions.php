@@ -168,9 +168,11 @@ class ArrayUtil {
 
 class SQLUtil {
 	static function escape($s) {
-		if (is_null($s)) {
+		if (is_null($s) || $s == "") {
 			return "NULL";
 		} elseif (!is_numeric($s)) {
+			// $s = "'" . str_replace("'", "''", $s) . "'";
+			$s = preg_replace('#\r\n|\r|\n#', '\r', $s);
 			$s = "'" . str_replace("'", "''", $s) . "'";
 		}
 		return $s;
