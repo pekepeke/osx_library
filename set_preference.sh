@@ -69,7 +69,11 @@ main() {
     IFS=$'\n';
     for f in $(preferences); do
       local TARGET="$HOME/Library/$f"
+      if diff $TARGET $f > /dev/null; then
+        continue
+      fi
       if [ x$opt_apply = x1 ]; then
+
         if yes_or_no "copy $f -> $TARGET" ; then
           cp -irp $TARGET /tmp/$(basename $TARGET).library
           [ ! -e $TARGET.org -a ! -L $TARGET ] && mv $TARGET $TARGET.org
