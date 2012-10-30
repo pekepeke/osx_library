@@ -57,7 +57,11 @@ class Reader {
 			$itemcnt = preg_match_all('/'.$e.'/', $_line, $dummy);
 			if ($itemcnt % 2 == 0) $eof = true;
 		}
-		$_csv_line = preg_replace('/(?:\\r\\n|[\\r\\n])?$/', $d, trim($_line));
+		if ($d == "\t" || $d == " " || $d == "\r" || $d == "\n") {
+			$_csv_line = preg_replace('/(?:\\r\\n|[\\r\\n])?$/', $d, preg_replace('!^[\r\n]*|[\r\n]*$!', '', $_line));
+		} else {
+			$_csv_line = preg_replace('/(?:\\r\\n|[\\r\\n])?$/', $d, trim($_line));
+		}
 		$_csv_pattern = '/('.$e.'[^'.$e.']*(?:'.$e.$e.'[^'.$e.']*)*'.$e.'|[^'.$d.']*)'.$d.'/';
 		preg_match_all($_csv_pattern, $_csv_line, $_csv_matches);
 		$_csv_data = $_csv_matches[1];
@@ -164,13 +168,27 @@ class ArrayUtil {
 		}
 		return $arr;
 	}
+	static function compact($lines) {
+		// $fn = create_function('$k, $v', 'return $v != "";');
+		// return array_filter($lines, '_function_array_compact');
+		$arr = array();
+		foreach ($lines as $v) {
+			$v != "" && $arr[] = $v;
+		}
+		return $arr;
+	}
+}
+
+function _function_array_compact($k, $v) {
+	return $v != "";
 }
 
 class SQLUtil {
 	static function escape($s) {
 		if (is_null($s) || $s == "") {
 			return "NULL";
-		} elseif (!is_numeric($s)) {
+		} elseif (!is_numeric($s) &&
+			!preg_match('!^(now|sysdate|timeofday)\(.*\)$!i', $s)) {
 			// $s = "'" . str_replace("'", "''", $s) . "'";
 			$s = preg_replace('#\r\n|\r|\n#', '\r', $s);
 			$s = "'" . str_replace("'", "''", $s) . "'";

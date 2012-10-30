@@ -11,5 +11,6 @@ $tsv = Reader::tsv();
 
 $lines = ArrayUtil::invert($tsv->parse($stdin));
 foreach ($lines as $line) {
+	$line = ArrayUtil::compact($line);
 	printf("%s in (%s)\n", array_shift($line), implode(',', SQLUtil::escapeAll($line)));
 }
