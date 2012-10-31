@@ -179,9 +179,9 @@ class ArrayUtil {
 	}
 }
 
-function _function_array_compact($k, $v) {
-	return $v != "";
-}
+// function _function_array_compact($k, $v) {
+// 	return $v != "";
+// }
 
 class SQLUtil {
 	static function escape($s) {
