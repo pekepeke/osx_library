@@ -72,15 +72,20 @@ main() {
       if diff $TARGET $f > /dev/null; then
         continue
       fi
+      if [ ${f##*.} = "plist" -a -e $f -a -e $TARGET ]; then
+        tools/bin/pldiff.pl $TARGET $f
+      fi
+      local label_f=$([ $f -nt $TARGET ] && echo "(new)")
+      local label_t=$([ $TARGET -nt $f ] && echo "(new)")
       if [ x$opt_apply = x1 ]; then
 
-        if yes_or_no "copy $f -> $TARGET" ; then
+        if yes_or_no "copy $f${label_f} -> $TARGET${label_t}" ; then
           cp -irp $TARGET /tmp/$(basename $TARGET).library
           [ ! -e $TARGET.org -a ! -L $TARGET ] && mv $TARGET $TARGET.org
           trace cp "$f" "$TARGET"
         fi
       else
-        if yes_or_no "copy $TARGET -> $f" ; then
+        if yes_or_no "copy $TARGET${label_t} -> $f${label_f}" ; then
           cp -irp $f /tmp/$(basename $f).github
           trace cp "$TARGET" "$f"
         fi
