@@ -43,7 +43,7 @@ ctl_applications() {
 yes_or_no() {
   local ret
   if [ "x$1" != x ]; then
-    echo $1
+    echo -e $1
   fi
   echo -n "OK? [y/n] : "
   read ret
@@ -59,11 +59,19 @@ trace() {
 main() {
   cd $(dirname $0)
   local tm=$(date +'%S')
+
+  local RED="\033[1;31m"
+  local GREEN="\033[1;32m"
+  local YELLOW="\033[1;33m"
+  local BLUE="\033[1;34m"
+  local GRAY="\033[1;37m"
+  local DEFAULT="\033[00m"
+
   if [ x$opt_apply = x1 ]; then
-    echo "#### Repos -> HOME"
+    echo -e "${RED}#### Repos -> HOME${DEFAULT}"
     ctl_applications stop
   else
-    echo "#### HOME -> Repos"
+    echo -e "${BLUE}#### HOME -> Repos${DEFAULT}"
   fi
   (
     IFS=$'\n';
@@ -79,13 +87,13 @@ main() {
       local label_t=$([ $TARGET -nt $f ] && echo "(new)")
       if [ x$opt_apply = x1 ]; then
 
-        if yes_or_no "copy $f${label_f} -> $TARGET${label_t}" ; then
+        if yes_or_no "copy ${YELLOW}$f${label_f}${DEFAULT} -> ${RED}$TARGET${label_t}${DEFAULT}" ; then
           cp -irp $TARGET /tmp/$(basename $TARGET).library
           [ ! -e $TARGET.org -a ! -L $TARGET ] && mv $TARGET $TARGET.org
           trace cp "$f" "$TARGET"
         fi
       else
-        if yes_or_no "copy $TARGET${label_t} -> $f${label_f}" ; then
+        if yes_or_no "copy ${RED}$TARGET${label_t}${DEFAULT} -> ${YELLOW}$f${label_f}${DEFAULT}" ; then
           cp -irp $f /tmp/$(basename $f).github
           trace cp "$TARGET" "$f"
         fi
