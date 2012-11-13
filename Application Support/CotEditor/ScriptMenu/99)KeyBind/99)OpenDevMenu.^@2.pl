@@ -17,7 +17,9 @@ tell application "System Events"
 		tell menu bar 1
 			tell menu bar item menu_name
 				tell menu menu_name
+					delay 0.2
 					click
+					delay 0.2
 					click menu item submenu_item
 				end tell
 			end tell
