@@ -190,7 +190,7 @@ class SQLUtil {
 		} elseif (!is_numeric($s) &&
 			!preg_match('!^(now|sysdate|timeofday)\(.*\)$!i', $s)) {
 			// $s = "'" . str_replace("'", "''", $s) . "'";
-			$s = preg_replace('#\r\n|\r|\n#', '\r', $s);
+			$s = preg_replace('#\r\n|\r|\n#', '\n', $s);
 			$s = "'" . str_replace("'", "''", $s) . "'";
 		}
 		return $s;
