@@ -1,0 +1,83 @@
+{
+	"theme": "Soda Light.sublime-theme",
+	"auto_complete_commit_on_tab": true,
+	"ensure_newline_at_eof_on_save": true,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"tab_size": 4,
+	"bold_folder_labels": true,				// サイドバーのフォルダ名を太字に
+	"caret_style": "phase",						// キャレットのスタイルを変える。他に「smooth」「blick」「solid」「wide」など
+	"draw_minimap_border": true,			// ミニマップの表示位置にボーダーを付ける
+	"highlight_line": true,						// キャレットのある行をハイライトする
+	"scroll_past_end": true,					// ファイルの終端にくると編集しにくくなるので、ファイルの終端を大分先にする
+	// for Emmet User
+	"disable_formatted_linebreak": true,			// Emmetを有効にすると、日本語変換確定後に文字が消えるのを防ぐ
+	"disabled_single_snippet_for_scopes": "",	// Emmetを有効にすると、HTMLで「php」の展開が「<?php ?>」にならない問題の回避
+	"enable_emmet_keymap": true,							// 英語キーボード以外でEmmetを使う場合は「false」にするとかしないとか
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"file_exclude_patterns":
+	[
+		".tags*",
+		"*.log",
+		"*.class",
+		"*.db",
+		"*.tmLanguage.cache",
+		"*.tmPreferences.cache",
+		"*.psd",
+		"*.psb",
+		"*.png",
+		"*.gif",
+		"*.jpg",
+		"*.jpeg",
+		"Gemfile.lock",
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.ico",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.pdf",
+		"*.class",
+		"*.mov",
+		"*.mp3",
+		"*.mp4",
+		"*.swf",
+		"*.xls",
+		"*.doc",
+		"*.bak",
+		"*.backup",
+		"*.acorn",
+		"*.license",
+		"*.zargo*"
+	],
+	"folder_exclude_patterns":
+	[
+		"data",
+		".git",
+		".svn",
+		".hg",
+		"CVS",
+		".sass-cache",
+		".bundle",
+		"*.tiles",
+		"*.esproc",
+		".rbx",
+		"bin",
+		"script",
+		"tmp"
+	]
+}

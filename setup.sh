@@ -24,8 +24,32 @@ trace() {
   fi
 }
 
+find_depth() {
+  if [ x"$1" = x ]; then
+    return 1
+  fi
+  if [ x"$2" = x ]; then
+    return 2
+  fi
+  find "$1" -mindepth "$2" -maxdepth "$2"
+}
+
 application_support_files() {
-  find "Application Support" -depth 2
+  # find "Application Support" -depth 2
+  for f in $(ls "Application Support"); do
+    if [ ! -d "Application Support/$f" ]; then
+      continue
+    fi
+    case $f in
+      "Sublime Text 2")
+        find_depth "Application Support/$f" 2
+        ;;
+      *)
+        find_depth "Application Support/$f" 1
+        ;;
+    esac
+  done
+
 }
 
 is_ignore() {

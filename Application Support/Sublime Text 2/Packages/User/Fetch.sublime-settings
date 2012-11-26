@@ -1,0 +1,51 @@
+{
+	"files":
+	{
+		"backbone": "https://raw.github.com/documentcloud/backbone/master/backbone.js",
+		"gitignore-general": "https://raw.github.com/marcjenkins/GitIgnores/master/standard.gitignore",
+		"gitignore-wordpress": "https://raw.github.com/marcjenkins/GitIgnores/master/wordpress.gitignore",
+		"history": "https://raw.github.com/balupton/history.js/master/scripts/compressed/history.js",
+		"jquery": "http://code.jquery.com/jquery.js",
+		"jquery-cookie": "https://raw.github.com/carhartl/jquery-cookie/master/jquery.cookie.js",
+		"jquery-dotimeout": "https://raw.github.com/cowboy/jquery-dotimeout/master/jquery.ba-dotimeout.min.js",
+		"jquery-extra-selectors": "https://raw.github.com/keithclark/JQuery-Extended-Selectors/master/jquery-extra-selectors.js",
+		"jquery-flexslider": "https://raw.github.com/mbmufffin/FlexSlider/master/jquery.flexslider-min.js",
+		"jquery-mediaelement": "https://raw.github.com/johndyer/mediaelement/master/build/mediaelement-and-player.js",
+		"jquery-min": "http://code.jquery.com/jquery.min.js",
+		"jquery-mobile-vmouse": "https://raw.github.com/jquery/jquery-mobile/master/js/jquery.mobile.vmouse.js",
+		"jquery-mousewheel": "https://raw.github.com/brandonaaron/jquery-mousewheel/master/jquery.mousewheel.js",
+		"jquery-ui-effects": "https://raw.github.com/jquery/jquery-ui/master/ui/jquery.effects.core.js",
+		"jquery-url": "https://raw.github.com/allmarkedup/jQuery-URL-Parser/master/jquery.url.js",
+		"json2": "https://raw.github.com/douglascrockford/JSON-js/master/json2.js",
+		"knockout": "https://raw.github.com/SteveSanderson/knockout/master/build/output/knockout-latest.js",
+		"modernizr": "https://raw.github.com/Modernizr/Modernizr/master/modernizr.js",
+		"normalize": "https://raw.github.com/necolas/normalize.css/master/normalize.css",
+		"respond": "https://raw.github.com/keithclark/Respond/master/respond.min.js",
+		"selectivizr": "https://raw.github.com/keithclark/selectivizr/master/selectivizr.js",
+		"twitter-bootstrap-alerts": "https://raw.github.com/twitter/bootstrap/master/js/bootstrap-alerts.js",
+		"twitter-bootstrap-buttons": "https://raw.github.com/twitter/bootstrap/master/js/bootstrap-buttons.js",
+		"twitter-bootstrap-carousel": "https://raw.github.com/twitter/bootstrap/master/js/bootstrap-carousel.js",
+		"twitter-bootstrap-collapse": "https://raw.github.com/twitter/bootstrap/master/js/bootstrap-collapse.js",
+		"twitter-bootstrap-dropdown": "https://raw.github.com/twitter/bootstrap/master/js/bootstrap-dropdown.js",
+		"twitter-bootstrap-modal": "https://raw.github.com/twitter/bootstrap/master/js/bootstrap-modal.js",
+		"twitter-bootstrap-popover": "https://raw.github.com/twitter/bootstrap/master/js/bootstrap-popover.js",
+		"twitter-bootstrap-scrollspy": "https://raw.github.com/twitter/bootstrap/master/js/bootstrap-scrollspy.js",
+		"twitter-bootstrap-tab": "https://raw.github.com/twitter/bootstrap/master/js/bootstrap-tab.js",
+		"twitter-bootstrap-tooltip": "https://raw.github.com/twitter/bootstrap/master/js/bootstrap-tooltip.js",
+		"twitter-bootstrap-transition": "https://raw.github.com/twitter/bootstrap/master/js/bootstrap-transition.js",
+		"twitter-bootstrap-typehead": "https://raw.github.com/twitter/bootstrap/master/js/bootstrap-typehead.js",
+		"underscore": "https://raw.github.com/documentcloud/underscore/master/underscore.js"
+	},
+	"packages":
+	{
+		"WordPress": "http://wordpress.org/latest.zip",
+		"ember": "https://github.com/emberjs/ember.js/zipball/master",
+		"foundation": "https://github.com/zurb/foundation/zipball/master",
+		"handelbars": "https://github.com/wycats/handlebars.js/zipball/master",
+		"html5-boilerplate": "https://github.com/h5bp/html5-boilerplate/zipball/master",
+		"html5-boilerplate-stripped": "https://github.com/h5bp/html5-boilerplate/zipball/v3.0stripped",
+		"jQuery Mobile": "https://github.com/jquery/jquery-mobile/zipball/master",
+		"skeleton": "https://github.com/dhgamache/Skeleton/zipball/master",
+		"twitter-bootstrap": "https://github.com/twitter/bootstrap/zipball/master"
+	}
+}

@@ -1,0 +1,4 @@
+{
+  // "ruby_rspec_exec": "bundle exec rspec",
+  "save_on_run": true
+}

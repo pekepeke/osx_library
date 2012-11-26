@@ -1,0 +1,6 @@
+[
+	{ "keys": ["super+shift+a"], "command": "alignment" }
+  , { "keys": ["super+shift+r"], "command": "reveal_in_side_bar"}
+  , { "keys": ["ctrl+shift+d"], "command": "file_diff_menu" }
+  , { "keys": ["super+shift+h"], "command": "goto_documentation" }
+]

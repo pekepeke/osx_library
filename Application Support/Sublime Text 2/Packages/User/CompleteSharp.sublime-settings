@@ -1,0 +1,9 @@
+{
+  "completesharp_assemblies": 
+    [
+      // "${project_path:${folder}}/Library/ScriptAssemblies/Assembly-CSharp.dll",
+      // "${project_path:${folder}}/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll"
+      "/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll",
+      "/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll"
+    ]
+}

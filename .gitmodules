@@ -40,6 +40,6 @@
 [submodule "Application Support/Coda 2/Plug-ins/Jade.codaplugin"]
 	path = Application Support/Coda 2/Plug-ins/Jade.codaplugin
 	url = git://github.com/ninjakttty/Jade.codaplugin.git
-[submodule "Application Support/Coda 2/django-template.mode"]
-	path = Application Support/Coda 2/django-template.mode
+[submodule "Application Support/Coda 2/Modes/django-template.mode"]
+	path = Application Support/Coda 2/Modes/django-template.mode
 	url = git://github.com/jbergantine/django-template.mode.git
