@@ -1,0 +1,19 @@
+{
+    "debug"           :  false,
+    "ctags_command"   :  "ctags -R -f .tags",
+    "filters"         :  {
+        "source.python": {"type":"^i$"}
+    },
+    "definition_filters": {
+        "source.php": {"type":"^v$"}
+    },
+    "definition_current_first": false,
+    "show_context_menus": false,
+    "extra_tag_paths" :
+     [
+       // [["source.scala", "osx"], "/var/opt/src/scala-2.9.2/.tags"],
+       // [["source.scala", "osx"], "/var/opt/src/play-2.0.1/.tags"],
+       // [["source.python", "windows"], "C:\\Python27\\Lib\\tags"]
+     ],
+    "extra_tag_files" : [".gemtags"]
+}
