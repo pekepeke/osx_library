@@ -308,13 +308,13 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
-			<string>(?#a)(?&lt;!\\)\[.*?(?&lt;!\\)\](?=\()</string>
+			<string>(?#a)(?&lt;!\\)\[[^\[\]]*?(?!&lt;\\)\](?=\()</string>
 			<key>regularExpression</key>
 			<true/>
 		</dict>
 		<dict>
 			<key>beginString</key>
-			<string>(?#a)(?&lt;!\\)\[.*?(?&lt;!\\)\][ ]?(?=\[)</string>
+			<string>(?#a)(?&lt;!\\)\[[^\[\]]*?(?!&lt;\\)\][ ]?(?=\[)</string>
 			<key>regularExpression</key>
 			<true/>
 		</dict>

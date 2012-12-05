@@ -263,7 +263,23 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*AllowMethods\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*AllowOverride\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AllowOverrideList\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -320,6 +336,14 @@
 		<dict>
 			<key>beginString</key>
 			<string>^\s*AssignUserID\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AsyncRequestWorkerFactor\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -479,6 +503,118 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*AuthFormAuthoritative\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthFormDisableNoStore\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthFormFakeBasicAuth\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthFormLocation\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthFormLoginRequiredLocation\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthFormLoginSuccessLocation\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthFormLogoutLocation\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthFormMethod\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthFormMimetype\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthFormPassword\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthFormProvider\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthFormSitePassphrase\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthFormSize\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthFormUsername\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*AuthGroupFile\s</string>
 			<key>ignoreCase</key>
 			<true/>
@@ -488,6 +624,14 @@
 		<dict>
 			<key>beginString</key>
 			<string>^\s*AuthLDAPAuthoritative\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthLDAPAuthorizePrefix\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -512,6 +656,14 @@
 		<dict>
 			<key>beginString</key>
 			<string>^\s*AuthLDAPCharsetConfig\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthLDAPCompareAsUser\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -567,6 +719,30 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*AuthLDAPInitialBindAsUser\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthLDAPInitialBindPattern\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthLDAPMaxSubGroupDepth\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*AuthLDAPRemoteUserAttribute\s</string>
 			<key>ignoreCase</key>
 			<true/>
@@ -583,6 +759,30 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*AuthLDAPSearchAsUser\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthLDAPSubGroupAttribute\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthLDAPSubGroupClass\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*AuthLDAPUrl\s</string>
 			<key>ignoreCase</key>
 			<true/>
@@ -591,7 +791,55 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*AuthMerging\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*AuthName\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthnCacheContext\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthnCacheEnable\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthnCacheProvideFor\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthnCacheSOCache\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthnCacheTimeout\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -608,6 +856,30 @@
 		<dict>
 			<key>beginString</key>
 			<string>^\s*AuthUserFile\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthzDBDLoginToReferer\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthzDBDQuery\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*AuthzDBDRedirectQuery\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -663,7 +935,23 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*AuthzSendForbiddenOnFailure\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*AuthzUserAuthoritative\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*BalancerGrowth\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -712,6 +1000,14 @@
 		<dict>
 			<key>beginString</key>
 			<string>^\s*BufferedLogs\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*BufferSize\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -823,6 +1119,14 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*CacheHeader\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*CacheIgnoreCacheControl\s</string>
 			<key>ignoreCase</key>
 			<true/>
@@ -856,6 +1160,14 @@
 		<dict>
 			<key>beginString</key>
 			<string>^\s*CacheIgnoreURLSessionIdentifiers\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*CacheKeyBaseURL\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -911,6 +1223,14 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*CacheMinExpire\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*CacheMinFileSize\s</string>
 			<key>ignoreCase</key>
 			<true/>
@@ -927,6 +1247,30 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*CacheQuickHandler\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*CacheReadSize\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*CacheReadTime\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*CacheRoot\s</string>
 			<key>ignoreCase</key>
 			<true/>
@@ -936,6 +1280,22 @@
 		<dict>
 			<key>beginString</key>
 			<string>^\s*CacheSize\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*CacheStaleOnError\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*CacheStoreExpired\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -1183,6 +1543,14 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*DBDInitSQL\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*DBDKeep\s</string>
 			<key>ignoreCase</key>
 			<true/>
@@ -1263,7 +1631,23 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*DefaultRuntimeDir\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*DefaultType\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*Define\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -1327,6 +1711,14 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*DirectoryIndexRedirect\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*DirectorySlash\s</string>
 			<key>ignoreCase</key>
 			<true/>
@@ -1336,6 +1728,14 @@
 		<dict>
 			<key>beginString</key>
 			<string>^\s*DocumentRoot\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*DTracePrivileges\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -1423,6 +1823,14 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*Error\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*ErrorDocument\s</string>
 			<key>ignoreCase</key>
 			<true/>
@@ -1440,6 +1848,14 @@
 		<dict>
 			<key>beginString</key>
 			<string>^\s*ErrorLog\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*ErrorLogFormat\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -1631,6 +2047,38 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*HeartbeatAddress\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*HeartbeatListen\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*HeartbeatMaxServers\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*HeartbeatStorage\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*HostnameLookups\s</string>
 			<key>ignoreCase</key>
 			<true/>
@@ -1687,6 +2135,14 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*IncludeOptional\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*IndexHeadInsert\s</string>
 			<key>ignoreCase</key>
 			<true/>
@@ -1696,6 +2152,14 @@
 		<dict>
 			<key>beginString</key>
 			<string>^\s*IndexIgnore\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*IndexIgnoreReset\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -1720,6 +2184,14 @@
 		<dict>
 			<key>beginString</key>
 			<string>^\s*IndexStyleSheet\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*InputSed\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -2063,6 +2535,14 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*KeptBodySize\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*LanguagePriority\s</string>
 			<key>ignoreCase</key>
 			<true/>
@@ -2080,6 +2560,14 @@
 		<dict>
 			<key>beginString</key>
 			<string>^\s*LDAPCacheTTL\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*LDAPConnectionPoolTTL\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -2111,6 +2599,38 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*LDAPReferralHopLimit\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*LDAPReferrals\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*LDAPRetries\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*LDAPRetryDelay\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*LDAPSharedCacheFile\s</string>
 			<key>ignoreCase</key>
 			<true/>
@@ -2120,6 +2640,14 @@
 		<dict>
 			<key>beginString</key>
 			<string>^\s*LDAPSharedCacheSize\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*LDAPTimeout\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -2279,7 +2807,143 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*LogMessage\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*LuaAuthzProvider\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*LuaHookAccessChecker\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*LuaHookAuthChecker\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*LuaHookCheckUserID\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*LuaHookFixups\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*LuaHookInsertFilter\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*LuaHookMapToStorage\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*LuaHookTranslateName\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*LuaHookTypeChecker\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*LuaInherit\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*LuaPackageCPath\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*LuaPackagePath\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*LuaQuickHandler\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*LuaRoot\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*LuaScope\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*MaxClients\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*MaxConnectionsPerChild\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -2296,6 +2960,22 @@
 		<dict>
 			<key>beginString</key>
 			<string>^\s*MaxMemFree\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*MaxRangeOverlaps\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*MaxRangeReversals\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -2320,6 +3000,14 @@
 		<dict>
 			<key>beginString</key>
 			<string>^\s*MaxRequestsPerThread\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*MaxRequestWorkers\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -2463,6 +3151,14 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*ModemStandard\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*ModMimeUsePathInfo\s</string>
 			<key>ignoreCase</key>
 			<true/>
@@ -2472,6 +3168,14 @@
 		<dict>
 			<key>beginString</key>
 			<string>^\s*MultiviewsMatch\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*Mutex\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -2551,6 +3255,14 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*OutputSed\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*PassEnv\s</string>
 			<key>ignoreCase</key>
 			<true/>
@@ -2568,6 +3280,14 @@
 		<dict>
 			<key>beginString</key>
 			<string>^\s*Port\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*PrivilegesMode\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -2607,6 +3327,14 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*ProxyBadHeader\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*ProxyBlock\s</string>
 			<key>ignoreCase</key>
 			<true/>
@@ -2631,7 +3359,143 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*ProxyExpressDBMFile\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*ProxyExpressDBMType\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*ProxyExpressEnable\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*ProxyFtpDirCharset\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*ProxyFtpEscapeWildcards\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*ProxyFtpListOnWildcard\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*ProxyHTMLBufSize\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*ProxyHTMLCharsetOut\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*ProxyHTMLDocType\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*ProxyHTMLEnable\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*ProxyHTMLEvents\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*ProxyHTMLExtended\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*ProxyHTMLFixups\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*ProxyHTMLInterp\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*ProxyHTMLLinks\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*ProxyHTMLMeta\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*ProxyHTMLStripComments\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*ProxyHTMLURLMap\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -2767,6 +3631,14 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*ProxySourceAddress\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*ProxyStatus\s</string>
 			<key>ignoreCase</key>
 			<true/>
@@ -2848,6 +3720,62 @@
 		<dict>
 			<key>beginString</key>
 			<string>^\s*RefererLog\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*ReflectorHeader\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*RemoteIPHeader\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*RemoteIPInternalProxy\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*RemoteIPInternalProxyList\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*RemoteIPProxiesHeader\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*RemoteIPTrustedProxy\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*RemoteIPTrustedProxyList\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -3215,6 +4143,174 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*Session\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SessionCookieName2\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SessionCookieName\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SessionCookieRemove\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SessionCryptoCipher\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SessionCryptoDriver\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SessionCryptoPassphrase\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SessionCryptoPassphraseFile\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SessionDBDCookieName2\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SessionDBDCookieName\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SessionDBDCookieRemove\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SessionDBDDeleteLabel\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SessionDBDInsertLabel\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SessionDBDPerUser\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SessionDBDSelectLabel\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SessionDBDUpdateLabel\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SessionEnv\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SessionExclude\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SessionHeader\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SessionInclude\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SessionMaxAge\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*SetEnv\s</string>
 			<key>ignoreCase</key>
 			<true/>
@@ -3224,6 +4320,14 @@
 		<dict>
 			<key>beginString</key>
 			<string>^\s*SetEnvIf\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SetEnvIfExpr\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -3311,6 +4415,14 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*SSILegacyExprParser\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*SSIStartTag\s</string>
 			<key>ignoreCase</key>
 			<true/>
@@ -3367,6 +4479,14 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*SSLCARevocationCheck\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*SSLCARevocationFile\s</string>
 			<key>ignoreCase</key>
 			<true/>
@@ -3408,6 +4528,14 @@
 		<dict>
 			<key>beginString</key>
 			<string>^\s*SSLCipherSuite\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SSLCompression\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -3463,6 +4591,54 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*SSLOCSPDefaultResponder\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SSLOCSPEnable\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SSLOCSPOverrideResponder\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SSLOCSPResponderTimeout\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SSLOCSPResponseMaxAge\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SSLOCSPResponseTimeSkew\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*SSLOptions\s</string>
 			<key>ignoreCase</key>
 			<true/>
@@ -3496,6 +4672,14 @@
 		<dict>
 			<key>beginString</key>
 			<string>^\s*SSLProxyCACertificatePath\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SSLProxyCARevocationCheck\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -3544,6 +4728,14 @@
 		<dict>
 			<key>beginString</key>
 			<string>^\s*SSLProxyEngine\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SSLProxyMachineCertificateChainFile\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -3639,6 +4831,86 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*SSLSessionTicketKeyFile\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SSLStaplingCache\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SSLStaplingErrorCacheTimeout\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SSLStaplingFakeTryLater\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SSLStaplingForceURL\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SSLStaplingResponderTimeout\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SSLStaplingResponseMaxAge\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SSLStaplingResponseTimeSkew\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SSLStaplingReturnResponderErrors\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SSLStaplingStandardCacheTimeout\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*SSLStrictSNIVHostCheck\s</string>
 			<key>ignoreCase</key>
 			<true/>
@@ -3648,6 +4920,14 @@
 		<dict>
 			<key>beginString</key>
 			<string>^\s*SSLUserName\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*SSLUseStapling\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -3775,6 +5055,14 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*UnsetEnv\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*UseCanonicalName\s</string>
 			<key>ignoreCase</key>
 			<true/>
@@ -3800,6 +5088,54 @@
 		<dict>
 			<key>beginString</key>
 			<string>^\s*UserDir\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*VHostCGIMode\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*VHostCGIPrivs\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*VHostGroup\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*VHostPrivs\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*VHostSecure\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*VHostUser\s</string>
 			<key>ignoreCase</key>
 			<true/>
 			<key>regularExpression</key>
@@ -3839,6 +5175,14 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>^\s*WatchdogInterval\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>^\s*Win32DisableAcceptEx\s</string>
 			<key>ignoreCase</key>
 			<true/>
@@ -3853,12 +5197,36 @@
 			<key>regularExpression</key>
 			<true/>
 		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*xml2EncAlias\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*xml2EncDefault\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^\s*xml2StartParse\s</string>
+			<key>ignoreCase</key>
+			<true/>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
 	</array>
 	<key>commentsArray</key>
 	<array>
 		<dict>
 			<key>beginString</key>
-			<string>^[ \t]*#(.*+)</string>
+			<string>^[ \t]*#.*+</string>
 			<key>regularExpression</key>
 			<true/>
 		</dict>
@@ -3987,7 +5355,15 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>AllowMethods</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>AllowOverride</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AllowOverrideList</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -4016,6 +5392,10 @@
 		<dict>
 			<key>keyString</key>
 			<string>AssignUserID</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AsyncRequestWorkerFactor</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -4095,11 +5475,75 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>AuthFormAuthoritative</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthFormBody</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthFormDisableNoStore</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthFormFakeBasicAuth</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthFormLocation</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthFormLoginRequiredLocation</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthFormLoginSuccessLocation</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthFormLogoutLocation</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthFormMethod</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthFormMimetype</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthFormPassword</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthFormProvider</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthFormSitePassphrase</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthFormSize</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthFormUsername</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>AuthGroupFile</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
 			<string>AuthLDAPAuthoritative</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthLDAPAuthorizePrefix</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -4112,6 +5556,10 @@
 		<dict>
 			<key>keyString</key>
 			<string>AuthLDAPCharsetConfig</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthLDAPCompareAsUser</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -4139,6 +5587,18 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>AuthLDAPInitialBindAsUser</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthLDAPInitialBindPattern</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthLDAPMaxSubGroupDepth</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>AuthLDAPRemoteUserAttribute</string>
 		</dict>
 		<dict>
@@ -4147,11 +5607,51 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>AuthLDAPSearchAsUser</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthLDAPSubGroupAttribute</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthLDAPSubGroupClass</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>AuthLDAPUrl</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>AuthMerging</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>AuthName</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthnCacheContext</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthnCacheEnable</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthnCacheProvideFor</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthnCacheProvideFor</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthnCacheTimeout</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthnCacheTimeout</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -4160,6 +5660,14 @@
 		<dict>
 			<key>keyString</key>
 			<string>AuthUserFile</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthzDBDQuery</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>AuthzDBDRedirectQuery</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -4187,7 +5695,15 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>AuthzSendForbiddenOnFailure</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>AuthzUserAuthoritative</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>BalancerGrowth</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -4215,7 +5731,15 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>BufferSize</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>CacheDefaultExpire</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>CacheDetailHeader</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -4267,6 +5791,10 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>CacheHeader</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>CacheIgnoreCacheControl</string>
 		</dict>
 		<dict>
@@ -4284,6 +5812,10 @@
 		<dict>
 			<key>keyString</key>
 			<string>CacheIgnoreURLSessionIdentifiers</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>CacheKeyBaseURL</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -4311,6 +5843,10 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>CacheMinExpire</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>CacheMinFileSize</string>
 		</dict>
 		<dict>
@@ -4319,11 +5855,31 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>CacheQuickHandler</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>CacheReadSize</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>CacheReadTime</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>CacheRoot</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
 			<string>CacheSize</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>CacheStaleOnError</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>CacheStoreExpired</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -4447,6 +6003,10 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>DBDInitSQL</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>DBDKeep</string>
 		</dict>
 		<dict>
@@ -4483,7 +6043,15 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>DefaultRuntimeDir</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>DefaultType</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>Define</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -4515,11 +6083,19 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>DirectoryIndexRedirect</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>DirectorySlash</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
 			<string>DocumentRoot</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>DTracePrivileges</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -4559,6 +6135,10 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>Error</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>ErrorDocument</string>
 		</dict>
 		<dict>
@@ -4568,6 +6148,10 @@
 		<dict>
 			<key>keyString</key>
 			<string>ErrorLog</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>ErrorLogFormat</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -4663,6 +6247,22 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>HeartbeatAddress</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>HeartbeatListen</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>HeartbeatMaxServers</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>HeartbeatStorage</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>HostnameLookups</string>
 		</dict>
 		<dict>
@@ -4691,11 +6291,19 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>IncludeOptional</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>IndexHeadInsert</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
 			<string>IndexIgnore</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>IndexIgnoreReset</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -4708,6 +6316,10 @@
 		<dict>
 			<key>keyString</key>
 			<string>IndexStyleSheet</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>InputSed</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -4743,6 +6355,10 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>KeptBodySize</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>LanguagePriority</string>
 		</dict>
 		<dict>
@@ -4755,7 +6371,15 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>LDAPConnectionPoolTTL</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>LDAPConnectionTimeout</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>LDAPLibraryDebug</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -4767,11 +6391,31 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>LDAPReferralHopLimit</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>LDAPReferrals</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>LDAPRetries</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>LDAPRetryDelay</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>LDAPSharedCacheFile</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
 			<string>LDAPSharedCacheSize</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>LDAPTimeout</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -4851,7 +6495,75 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>LogMessage</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>LuaAuthzProvider</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>LuaHookAccessChecker</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>LuaHookAuthChecker</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>LuaHookCheckUserID</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>LuaHookFixups</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>LuaHookInsertFilter</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>LuaHookMapToStorage</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>LuaHookTranslateName</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>LuaHookTypeChecker</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>LuaInherit</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>LuaPackageCPath</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>LuaPackagePath</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>LuaQuickHandler</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>LuaRoot</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>LuaScope</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>MaxClients</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>MaxConnectionsPerChild</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -4860,6 +6572,14 @@
 		<dict>
 			<key>keyString</key>
 			<string>MaxMemFree</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>MaxRangeOverlaps</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>MaxRangeReversals</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -4872,6 +6592,10 @@
 		<dict>
 			<key>keyString</key>
 			<string>MaxRequestsPerThread</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>MaxRequestWorkers</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -4943,11 +6667,19 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>ModemStandard</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>ModMimeUsePathInfo</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
 			<string>MultiviewsMatch</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>Mutex</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -4983,6 +6715,10 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>OutputSed</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>PassEnv</string>
 		</dict>
 		<dict>
@@ -4992,6 +6728,10 @@
 		<dict>
 			<key>keyString</key>
 			<string>Port</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>PrivilegesMode</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -5011,6 +6751,10 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>ProxyBadHeader</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>ProxyBlock</string>
 		</dict>
 		<dict>
@@ -5023,7 +6767,75 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>ProxyExpressDBMFile</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>ProxyExpressDBMType</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>ProxyExpressEnable</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>ProxyFtpDirCharset</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>ProxyFtpEscapeWildcards</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>ProxyFtpListOnWildcard</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>ProxyHTMLBufSize</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>ProxyHTMLCharsetOut</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>ProxyHTMLDocType</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>ProxyHTMLEnable</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>ProxyHTMLEvents</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>ProxyHTMLExtended</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>ProxyHTMLFixups</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>ProxyHTMLInterp</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>ProxyHTMLLinks</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>ProxyHTMLMeta</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>ProxyHTMLStripComments</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>ProxyHTMLURLMap</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -5091,6 +6903,10 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>ProxySourceAddress</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>ProxyStatus</string>
 		</dict>
 		<dict>
@@ -5132,6 +6948,34 @@
 		<dict>
 			<key>keyString</key>
 			<string>RefererLog</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>ReflectorHeader</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>RemoteIPHeader</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>RemoteIPInternalProxy</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>RemoteIPInternalProxyList</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>RemoteIPProxiesHeader</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>RemoteIPTrustedProxy</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>RemoteIPTrustedProxyList</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -5315,11 +7159,99 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>Session</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SessionCookieName</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SessionCookieName2</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SessionCookieRemove</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SessionCryptoCipher</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SessionCryptoDriver</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SessionCryptoPassphrase</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SessionCryptoPassphraseFile</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SessionDBDCookieName</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SessionDBDCookieName2</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SessionDBDCookieRemove</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SessionDBDDeleteLabel</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SessionDBDInsertLabel</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SessionDBDPerUser</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SessionDBDSelectLabel</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SessionDBDUpdateLabel</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SessionEnv</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SessionExclude</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SessionHeader</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SessionInclude</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SessionMaxAge</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>SetEnv</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
 			<string>SetEnvIf</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SetEnvIfExpr</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -5363,6 +7295,10 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>SSILegacyExprParser</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>SSIStartTag</string>
 		</dict>
 		<dict>
@@ -5388,6 +7324,10 @@
 		<dict>
 			<key>keyString</key>
 			<string>SSLCADNRequestPath</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SSLCARevocationCheck</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -5439,6 +7379,30 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>SSLOCSPDefaultResponder</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SSLOCSPEnable</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SSLOCSPOverrideResponder</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SSLOCSPResponderTimeout</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SSLOCSPResponseMaxAge</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SSLOCSPResponseTimeSkew</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>SSLOptions</string>
 		</dict>
 		<dict>
@@ -5456,6 +7420,10 @@
 		<dict>
 			<key>keyString</key>
 			<string>SSLProxyCACertificatePath</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SSLProxyCARevocationCheck</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -5480,6 +7448,10 @@
 		<dict>
 			<key>keyString</key>
 			<string>SSLProxyEngine</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SSLProxyMachineCertificateChainFile</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -5527,11 +7499,55 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>SSLSessionTicketKeyFile</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SSLStaplingCache</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SSLStaplingErrorCacheTimeout</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SSLStaplingFakeTryLater</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SSLStaplingForceURL</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SSLStaplingResponderTimeout</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SSLStaplingResponseMaxAge</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SSLStaplingResponseTimeSkew</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SSLStaplingReturnResponderErrors</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SSLStaplingStandardCacheTimeout</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>SSLStrictSNIVHostCheck</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
 			<string>SSLUserName</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>SSLUseStapling</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -5595,6 +7611,10 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>UnsetEnv</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>UseCanonicalName</string>
 		</dict>
 		<dict>
@@ -5608,6 +7628,30 @@
 		<dict>
 			<key>keyString</key>
 			<string>UserDir</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>VHostCGIMode</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>VHostCGIPrivs</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>VHostGroup</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>VHostPrivs</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>VHostSecure</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>VHostUser</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
@@ -5627,11 +7671,27 @@
 		</dict>
 		<dict>
 			<key>keyString</key>
+			<string>WatchdogInterval</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
 			<string>Win32DisableAcceptEx</string>
 		</dict>
 		<dict>
 			<key>keyString</key>
 			<string>XBitHack</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>xml2EncAlias</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>xml2EncDefault</string>
+		</dict>
+		<dict>
+			<key>keyString</key>
+			<string>xml2StartParse</string>
 		</dict>
 	</array>
 	<key>extensions</key>
@@ -5651,6 +7711,12 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>(?&lt;=&lt;/?)AuthzProviderAlias\b</string>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>(?&lt;=&lt;/?)Directory\b</string>
 			<key>regularExpression</key>
 			<true/>
@@ -5663,6 +7729,18 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>(?&lt;=&lt;/?)Else\b</string>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>(?&lt;=&lt;/?)ElseIf\b</string>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>(?&lt;=&lt;/?)Files\b</string>
 			<key>regularExpression</key>
 			<true/>
@@ -5670,6 +7748,12 @@
 		<dict>
 			<key>beginString</key>
 			<string>(?&lt;=&lt;/?)FilesMatch\b</string>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>(?&lt;=&lt;/?)If\b</string>
 			<key>regularExpression</key>
 			<true/>
 		</dict>
@@ -5717,6 +7801,24 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>(?&lt;=&lt;/?)RequireAll\b</string>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>(?&lt;=&lt;/?)RequireAny\b</string>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>(?&lt;=&lt;/?)RequireNone\b</string>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>(?&lt;=&lt;/?)VirtualHost\b</string>
 			<key>regularExpression</key>
 			<true/>
@@ -5725,7 +7827,40 @@
 	<key>numbersArray</key>
 	<array/>
 	<key>outlineMenuArray</key>
-	<array/>
+	<array>
+		<dict>
+			<key>beginString</key>
+			<string>^[\t ]*&lt;Directory(?:Match)?[\t ]+"?(.*?)"?&gt;</string>
+			<key>ignoreCase</key>
+			<false/>
+			<key>keyString</key>
+			<string>Directory:  $1</string>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^[\t ]*&lt;Files(?:Match)?[\t ]+"?(.*?)"?&gt;</string>
+			<key>ignoreCase</key>
+			<false/>
+			<key>keyString</key>
+			<string>Files:  $1</string>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^[\t ]*&lt;Location(?:Match)[\t ]+"?(.*?)"?&gt;</string>
+			<key>ignoreCase</key>
+			<false/>
+			<key>keyString</key>
+			<string>Location:  $1</string>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>^[\t ]*&lt;VirtualHost[\t ]+"?(.*?)"?&gt;</string>
+			<key>ignoreCase</key>
+			<false/>
+			<key>keyString</key>
+			<string>VirtualHost:  $1</string>
+		</dict>
+	</array>
 	<key>stringsArray</key>
 	<array>
 		<dict>

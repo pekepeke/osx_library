@@ -23,6 +23,10 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>Array.concat</string>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>Array.copy</string>
 		</dict>
 		<dict>
@@ -36,6 +40,14 @@
 		<dict>
 			<key>beginString</key>
 			<string>Array.invert</string>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>Array.reverse</string>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>Array.slice</string>
 		</dict>
 		<dict>
 			<key>beginString</key>
@@ -111,6 +123,10 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>Dialog.addHelp</string>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>Dialog.addMessage</string>
 		</dict>
 		<dict>
@@ -140,6 +156,10 @@
 		<dict>
 			<key>beginString</key>
 			<string>Dialog.getString</string>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>Dialog.setInsets</string>
 		</dict>
 		<dict>
 			<key>beginString</key>
@@ -264,6 +284,10 @@
 		<dict>
 			<key>beginString</key>
 			<string>File.openDialog</string>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>File.openUrlAsString</string>
 		</dict>
 		<dict>
 			<key>beginString</key>
@@ -523,6 +547,10 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>IJ.log</string>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>IJ.maxMemory</string>
 		</dict>
 		<dict>
@@ -619,6 +647,10 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>makeEllipse</string>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>makeLine</string>
 		</dict>
 		<dict>
@@ -683,6 +715,10 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>nSlices</string>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>open</string>
 		</dict>
 		<dict>
@@ -708,6 +744,10 @@
 		<dict>
 			<key>beginString</key>
 			<string>Overlay.drawString</string>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>Overlay.hidden</string>
 		</dict>
 		<dict>
 			<key>beginString</key>
@@ -779,6 +819,10 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>Plot.setFrameSize</string>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>Plot.setJustification</string>
 		</dict>
 		<dict>
@@ -840,10 +884,6 @@
 		<dict>
 			<key>beginString</key>
 			<string>restoreSettings</string>
-		</dict>
-		<dict>
-			<key>beginString</key>
-			<string>Returns the num</string>
 		</dict>
 		<dict>
 			<key>beginString</key>
@@ -1051,6 +1091,10 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>Stack.getFrameInterval</string>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>Stack.getFrameRate</string>
 		</dict>
 		<dict>
@@ -1060,6 +1104,10 @@
 		<dict>
 			<key>beginString</key>
 			<string>Stack.getStatistics</string>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>Stack.getUnits</string>
 		</dict>
 		<dict>
 			<key>beginString</key>
@@ -1084,6 +1132,10 @@
 		<dict>
 			<key>beginString</key>
 			<string>Stack.setFrame</string>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>Stack.setFrameInterval</string>
 		</dict>
 		<dict>
 			<key>beginString</key>
@@ -1163,7 +1215,15 @@
 		</dict>
 		<dict>
 			<key>beginString</key>
+			<string>toScaled</string>
+		</dict>
+		<dict>
+			<key>beginString</key>
 			<string>toString</string>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>toUnscaled</string>
 		</dict>
 		<dict>
 			<key>beginString</key>
@@ -1194,14 +1254,15 @@
 			<key>regularExpression</key>
 			<true/>
 		</dict>
-	</array>
-	<key>extensions</key>
-	<array>
 		<dict>
-			<key>keyString</key>
-			<string>ijm</string>
+			<key>beginString</key>
+      <string>/*</string>
+			<key>endString</key>
+      <string>*/</string>
 		</dict>
 	</array>
+	<key>extensions</key>
+	<array/>
 	<key>keywordsArray</key>
 	<array>
 		<dict>
@@ -1232,16 +1293,17 @@
 			<key>beginString</key>
 			<string>while</string>
 		</dict>
-	</array>
-	<key>numbersArray</key>
-	<array>
 		<dict>
 			<key>beginString</key>
-			<string>(?&lt;![a-zA-Z])[0-9.]+(?![a-zA-Z])</string>
-			<key>regularExpression</key>
-			<true/>
+			<string>return</string>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>var</string>
 		</dict>
 	</array>
+	<key>numbersArray</key>
+	<array/>
 	<key>outlineMenuArray</key>
 	<array>
 		<dict>
@@ -1271,15 +1333,6 @@
 	<key>styleName</key>
 	<string>ImageJ</string>
 	<key>valuesArray</key>
-	<array>
-		<dict>
-			<key>beginString</key>
-			<string>false</string>
-		</dict>
-		<dict>
-			<key>beginString</key>
-			<string>true</string>
-		</dict>
-	</array>
+	<array/>
 </dict>
 </plist>

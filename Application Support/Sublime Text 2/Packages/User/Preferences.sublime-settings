@@ -55,7 +55,10 @@
 	],
 	"folder_exclude_patterns":
 	[
-		"data",
+		// "bin",
+		// "script",
+		// "tmp",
+		// "data",
 		".git",
 		".svn",
 		".hg",
@@ -64,10 +67,7 @@
 		".bundle",
 		"*.tiles",
 		"*.esproc",
-		".rbx",
-		"bin",
-		"script",
-		"tmp"
+		".rbx"
 	],
 	"font_face": "Ricty",
 	"font_size": 14,
