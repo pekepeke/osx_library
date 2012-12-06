@@ -55,10 +55,6 @@
 	],
 	"folder_exclude_patterns":
 	[
-		// "bin",
-		// "script",
-		// "tmp",
-		// "data",
 		".git",
 		".svn",
 		".hg",
@@ -81,6 +77,6 @@
 	"scroll_past_end": true,
 	"soda_classic_tabs": true,
 	"tab_size": 4,
-  "trim_trailing_white_space_on_save": true,
-	"theme": "Soda Light.sublime-theme"
+	"theme": "Soda Light.sublime-theme",
+	"trim_trailing_white_space_on_save": true
 }
