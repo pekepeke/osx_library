@@ -229,3 +229,111 @@ class SQLUtil {
 		return preg_match('!id$!i', $key);
 	}
 }
+
+
+class AlignRenderer {
+	var $layouts = null;
+	var $lines = null;
+
+	static function create() {
+		return new static();
+	}
+
+	function __construct() {
+		$this->clear();
+	}
+
+	function clear() {
+		$this->layouts = array();
+	}
+
+	function calc() {
+		$lines = $this->lines;
+
+		$layouts = array();
+		foreach ($lines as $line) {
+			foreach ($line as $i => $item) {
+				$len = $this->strlenMbDouble($item);
+				if (!isset($layouts[$i]) || $layouts[$i] < $len) {
+					$layouts[$i] = $len;
+				}
+			}
+		}
+		$this->layouts = $layouts;
+		return $this;
+	}
+
+	function renderMarkdownTable($lines) {
+		$this->lines = $lines;
+		$this->calc();
+
+		// $lines = $this->lines;
+		$items = array();
+
+		$items[] = $this->makeLine(array_shift($lines));
+		$items[] = $this->makeSeparator();
+		foreach ($lines as $line) {
+			$items[] = $this->makeLine($line);
+		}
+		return implode("\n", $items);
+	}
+
+	function renderTextileTable($lines) {
+		$this->lines = $lines;
+		$this->calc();
+
+		// $lines = $this->lines;
+		$items = array();
+
+		$items[] = $this->makeLine(array_shift($lines));
+		foreach ($lines as $line) {
+			$items[] = $this->makeLine($line);
+		}
+		return implode("\n", $items);
+	}
+	function renderBacklogTable($lines) {
+		$this->lines = $lines;
+		$this->calc();
+
+		// $lines = $this->lines;
+		$items = array();
+
+		$items[] = "|" . $this->makeLine(array_shift($lines)) . "|h";
+		foreach ($lines as $line) {
+			$items[] = "|" . $this->makeLine($line) . "|";
+		}
+		return implode("\n", $items);
+	}
+
+	function makeSeparator() {
+		$layouts = $this->layouts;
+		$items = array();
+		foreach ($layouts as $len) {
+			$items[] = str_repeat("-", $len);
+		}
+		return implode("|", $items);
+	}
+
+	function makeLine($line) {
+		if (empty($line)) {
+			return "";
+		}
+		$layouts = $this->layouts;
+		$items = array();
+		foreach ($line as $i => $item) {
+			// $items[] = sprintf("%".$layouts[$i]."s", $item);
+			$len = $this->strlenMbDouble($item);
+			// $items[] = str_repeat(" ", $layouts[$i] - $len) . $item;
+			$items[] = $item . str_repeat(" ", $layouts[$i] - $len);
+		}
+		return implode("|", $items);
+	}
+
+	function strlenMbDouble($s) {
+		$mblen = mb_strlen($s);
+		$wlen = (strlen($s) - $mblen) / 2;
+		$len = ($mblen - $wlen) + $wlen * 2;
+		return $len;
+	}
+}
+
