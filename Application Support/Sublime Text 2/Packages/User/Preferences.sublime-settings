@@ -2,6 +2,7 @@
 	"auto_complete_commit_on_tab": true,
 	"bold_folder_labels": true,
 	"caret_style": "phase",
+	"jsdocs_extend_double_slash": false,
 	"disable_formatted_linebreak": true,
 	"disabled_single_snippet_for_scopes": "",
 	"draw_minimap_border": true,

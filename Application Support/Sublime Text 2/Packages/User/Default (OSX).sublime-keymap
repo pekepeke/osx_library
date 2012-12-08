@@ -3,4 +3,16 @@
   , { "keys": ["super+shift+r"], "command": "reveal_in_side_bar"}
   , { "keys": ["ctrl+shift+d"], "command": "file_diff_menu" }
   , { "keys": ["super+shift+h"], "command": "goto_documentation" }
+  , { "keys": ["j"], "command": "move", "args": {"by": "lines", "forward": true}, "context":
+    [ {"key": "control", "operand": "sidebar_tree"} ]
+  }
+  , { "keys": ["k"], "command": "move", "args": {"by": "lines", "forward": false}, "context":
+    [ {"key": "control", "operand": "sidebar_tree"} ]
+  }
+  , { "keys": ["l"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
+    [ {"key": "control", "operand": "sidebar_tree"} ]
+  }
+  , { "keys": ["h"], "command": "move", "args": {"by": "characters", "forward": false}, "context":
+    [ {"key": "control", "operand": "sidebar_tree"} ]
+  }
 ]
