@@ -77,6 +77,8 @@
 	"line_padding_top": 2,
 	"scroll_past_end": true,
 	"soda_classic_tabs": true,
+	"margin": 0,
+	"auto_complete_delay": 50,
 	"tab_size": 4,
 	"theme": "Soda Light.sublime-theme",
 	"trim_trailing_white_space_on_save": true

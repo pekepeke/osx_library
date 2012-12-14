@@ -13,6 +13,12 @@
         <autogen>--KeyToKey-- KeyCode::JIS_UNDERSCORE, ModifierFlag::NONE, KeyCode::VK_JIS_BACKSLASH</autogen>
         <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION</not>
       </item>
+      <item>
+        <name>F6 to Fn_Lock (except virtual machine, RDC)</name>
+        <identifier>remap.myf6_to_numlock</identifier>
+        <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION</not>
+        <autogen>--KeyToKey-- KeyCode::F6, KeyCode::VK_LOCK_FN</autogen>
+      </item>
     </list>
     <item>
       <name>Extended Vim Mode</name>
