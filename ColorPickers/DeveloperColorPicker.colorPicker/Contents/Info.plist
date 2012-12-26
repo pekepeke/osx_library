@@ -3,48 +3,40 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>12C60</string>
+	<string>11C74</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>PhpPlugin</string>
-	<key>CFBundleIconFile</key>
-	<string>codaphp-plugin-icon.png</string>
+	<string>DeveloperColorPicker</string>
+	<key>CFBundleGetInfoString</key>
+	<string>1.5.4, © 2011 Wade Cosgrove &amp; Panic Inc.</string>
 	<key>CFBundleIdentifier</key>
-	<string>de.chipwreck.PhpPlugin</string>
+	<string>com.panic.developerColorPicker</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>PhpPlugin</string>
+	<string>DeveloperColorPicker</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
-	<key>CFBundleShortVersionString</key>
-	<string>4.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>4.0</string>
-	<key>CodaPlugInMinimumAPIVersion</key>
-	<string>5</string>
-	<key>CodaPlugInSupportedAPIVersion</key>
-	<string>6</string>
+	<string>1.5.4</string>
 	<key>DTCompiler</key>
 	<string></string>
 	<key>DTPlatformBuild</key>
-	<string>4G1004</string>
+	<string>10M2518</string>
 	<key>DTPlatformVersion</key>
-	<string>GM</string>
+	<string>PG</string>
 	<key>DTSDKBuild</key>
-	<string>10K549</string>
+	<string>9L31a</string>
 	<key>DTSDKName</key>
-	<string>macosx10.6</string>
+	<string>macosx10.5</string>
 	<key>DTXcode</key>
-	<string>0451</string>
+	<string>0400</string>
 	<key>DTXcodeBuild</key>
-	<string>4G1004</string>
-	<key>NSHumanReadableCopyright</key>
-	<string>Copyright by Mario Fischer, http://www.chipwreck.de</string>
+	<string>10M2518</string>
 	<key>NSPrincipalClass</key>
-	<string>CwPhpPlugin</string>
+	<string>DeveloperColorPicker</string>
 </dict>
 </plist>
