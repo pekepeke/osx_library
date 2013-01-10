@@ -16,6 +16,7 @@ my %FILES = (
     "MacVim.icns" => "/Applications/MacVim.app/Contents/Resources/",
     "muCommander.icns" => "/Applications/muCommander.app/Contents/Resources/icon.icns",
     "VimIcon.icns" => "/Applications/Vim.app/Contents/Resources/app.icns",
+    "kdiff3.icns" => "/Applications/kdiff3.app/Contents/Resources/kdiff3.icns",
 );
 
 sub usage {
@@ -26,7 +27,7 @@ sub usage {
 my $opt_help;
 Getopt::Long::Configure("bundling");
 GetOptions(
-    'h|help' => \$opt_help, 
+    'h|help' => \$opt_help,
 ) or usage;
 usage if $opt_help;
 
