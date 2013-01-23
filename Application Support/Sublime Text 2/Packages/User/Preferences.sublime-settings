@@ -7,6 +7,7 @@
 	"disabled_single_snippet_for_scopes": "",
 	"draw_minimap_border": true,
 	"enable_emmet_keymap": true,
+	"disable_tab_abbreviations" : true,
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
