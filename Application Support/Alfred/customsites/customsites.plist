@@ -230,5 +230,29 @@
 		<key>utf8</key>
 		<true/>
 	</dict>
+	<dict>
+		<key>keyword</key>
+		<string>ruigo</string>
+		<key>spaces</key>
+		<true/>
+		<key>text</key>
+		<string>Weblio</string>
+		<key>url</key>
+		<string>http://thesaurus.weblio.jp/content/{query}</string>
+		<key>utf8</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>keyword</key>
+		<string>en</string>
+		<key>spaces</key>
+		<true/>
+		<key>text</key>
+		<string>Weblio(English)</string>
+		<key>url</key>
+		<string>http://ejje.weblio.jp/content/{query}</string>
+		<key>utf8</key>
+		<true/>
+	</dict>
 </array>
 </plist>
