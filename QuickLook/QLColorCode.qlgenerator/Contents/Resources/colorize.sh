@@ -39,17 +39,19 @@ cmdOpts=(-I --font $font --quiet --add-data-dir $rsrcDir/override \
          --add-config-dir $rsrcDir/override/config --style $hlTheme \
          --font-size $fontSizePoints --encoding $textEncoding ${=extraHLFlags})
 
-#for o in $cmdOpts; do echo $o\<br/\>; done 
+#for o in $cmdOpts; do echo $o\<br/\>; done
 
 debug Setting reader
-#reader=(cat $target)
-reader=(/usr/local/bin/nkf -w $target)
+reader=(cat $target)
 
 debug Handling special cases
 case $target in
     *.graffle )
         # some omnigraffle files are XML and get passed to us.  Ignore them.
         exit 1
+        ;;
+    *[Rr]akefile | *.rake | *.haml )
+        lang=ruby
         ;;
     *.plist )
         lang=xml
@@ -72,7 +74,7 @@ case $target in
             lang=objc
         fi
         ;;
-    *.groovy )  
+    *.groovy )
         lang=java
         ;;
     *.pro )
@@ -84,7 +86,7 @@ case $target in
             lang=pro
         fi
         ;;
-    * ) 
+    * )
         lang=${target##*.}
     ;;
 esac
