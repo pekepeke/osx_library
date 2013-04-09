@@ -1,8 +1,9 @@
 {
   "sublimelinter": true,
-  "sublimelinter_delay": 0.5,
-  "sublimelinter_fill_outlines": false,
+  "sublimelinter_delay": 1,
   "sublimelinter_gutter_marks": true,
+  "sublimelinter_fill_outlines" : true,
+  "sublimelinter_mark_style": "fill",
   "jshint_options":
   {
     "browser": true,
