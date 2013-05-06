@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'osx-apps', :path => 'site-cookbooks/osx-apps'
+
+cookbook 'homebrew', :git => 'https://github.com/opscode-cookbooks/homebrew'
+cookbook 'dmg', :git => 'https://github.com/opscode-cookbooks/dmg'
+cookbook 'zip_app', :git => 'https://github.com/fnichol/chef-zip_app'
+
