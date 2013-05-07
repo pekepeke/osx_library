@@ -65,6 +65,10 @@ Applications = {
     type: "pkg",
     provider: 'dmg',
   },
+  "ClipMenu"=> {
+    source: "https://dl.dropbox.com/u/1140644/clipmenu/ClipMenu_0.4.3.dmg",
+    provider: 'dmg',
+  },
 
   'AppCleaner'=> {
     source: 'http://www.freemacsoft.net/downloads/AppCleaner_2.1.zip',
@@ -92,10 +96,6 @@ Applications = {
     source: "http://sourceforge.net/projects/vlc/files/2.0.5/macosx/vlc-2.0.5.dmg/download",
     provider: 'dmg',
   },
-  "Sublime Text 2"=> {
-    dmg_name: "sublimetext2", source: "http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%202.0.1.dmg",
-    provider: 'dmg',
-  },
   'CotEditor'=> {
     source: 'http://sourceforge.jp/projects/coteditor/downloads/54872/CotEditor_1.3.1.dmg',
     provider: 'dmg',
@@ -103,6 +103,13 @@ Applications = {
   'MacVim'=> {
     source: 'http://macvim-kaoriya.googlecode.com/files/macvim-kaoriya-20121213.dmg',
     provider: 'dmg',
+  },
+  "Sublime Text 2"=> {
+    dmg_name: "sublimetext2", source: "http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%202.0.1.dmg",
+    provider: 'dmg',
+  },
+  "nvALT"=> {
+    source: "http://abyss.designheresy.com/nvalt/files/nvalt2.2b105.zip",
   },
 
   'DiffMerge'=> {
@@ -113,6 +120,9 @@ Applications = {
     source: "http://download.virtualbox.org/virtualbox/4.2.12/VirtualBox-4.2.12-84980-OSX.dmg",
     type: "mpkg",
     provider: 'dmg',
+  },
+  "Cyberduck"=> {
+    source: "http://cyberduck.ch/Cyberduck-4.3.1.zip",
   },
   # "Silverlight"=> {
   #   source: "http://silverlight.dlservice.microsoft.com/download/D/C/2/DC2D5838-9138-4D25-AA92-52F61F7C51E6/runtime/Silverlight.dmg",

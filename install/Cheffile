@@ -3,9 +3,13 @@
 
 site 'http://community.opscode.com/api/v1'
 
+# cookbook 'rvm', :git => 'https://github.com/fnichol/chef-rvm'
+#
 cookbook 'osx-apps', :path => 'site-cookbooks/osx-apps'
 
-cookbook 'homebrew', :git => 'https://github.com/opscode-cookbooks/homebrew'
-cookbook 'dmg', :git => 'https://github.com/opscode-cookbooks/dmg'
-cookbook 'zip_app', :git => 'https://github.com/fnichol/chef-zip_app'
+cookbook 'homebrew'
+cookbook 'dmg'
+cookbook 'zip_app'
+cookbook 'mac_os_x'
+cookbook 'xquartz'
 
