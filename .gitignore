@@ -1,7 +1,11 @@
 
-Application\ Support/Sublime\ Text\ 2/Packages/User/SublimeREPLHistory
-Application\ Support/Sublime\ Text\ 2/Packages/User/Package\ Control.last-run
-Application\ Support/Sublime\ Text\ 2/Packages/User/encoding_cache.json
+Library/Application\ Support/Sublime\ Text\ 2/Packages/User/SublimeREPLHistory
+Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Package\ Control.last-run
+Library/Application\ Support/Sublime\ Text\ 2/Packages/User/encoding_cache.json
+
+install/cookbooks
+install/tmp
+install/vendor
 
 .DS_Store
 .AppleDouble

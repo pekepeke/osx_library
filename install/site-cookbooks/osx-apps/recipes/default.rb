@@ -78,6 +78,10 @@ Applications = {
     source: 'http://www.zipeg.net/downloads/zipeg_mac.dmg',
     provider: 'dmg',
   },
+  'Keka'=> {
+    source: 'http://download.kekaosx.com/',
+    provider: 'dmg',
+  },
   'Caffeine' => {
     source: 'http://lightheadsw.com/files/releases/com.lightheadsw.Caffeine/Caffeine1.1.1.zip',
     provider: 'zip',
@@ -94,6 +98,7 @@ Applications = {
   # },
   "VLC"=> {
     source: "http://sourceforge.net/projects/vlc/files/2.0.5/macosx/vlc-2.0.5.dmg/download",
+    volumes_dir: 'vlc-2.0.5',
     provider: 'dmg',
   },
   'CotEditor'=> {
@@ -116,6 +121,10 @@ Applications = {
     source: 'http://download-us.sourcegear.com/DiffMerge/3.3.2/DiffMerge.3.3.2.1139.dmg',
     provider: 'dmg',
   },
+  'stroy'=> {
+    source: 'http://stroy.wikidot.com/local--files/download/stroy-app-intel-1.0.3.zip',
+    provider: 'zip',
+  },
   "Virtualbox"=> {
     source: "http://download.virtualbox.org/virtualbox/4.2.12/VirtualBox-4.2.12-84980-OSX.dmg",
     type: "mpkg",
@@ -124,6 +133,10 @@ Applications = {
   "Cyberduck"=> {
     source: "http://cyberduck.ch/Cyberduck-4.3.1.zip",
   },
+  "Sequel Pro"=> {
+    source: "https://sequel-pro.googlecode.com/files/sequel-pro-1.0.2.dmg",
+    provider: 'dmg',
+  }
   # "Silverlight"=> {
   #   source: "http://silverlight.dlservice.microsoft.com/download/D/C/2/DC2D5838-9138-4D25-AA92-52F61F7C51E6/runtime/Silverlight.dmg",
   #   type: "pkg",
