@@ -6,6 +6,7 @@ Library/Application\ Support/Sublime\ Text\ 2/Packages/User/encoding_cache.json
 install/cookbooks
 install/tmp
 install/vendor
+install/.ruby-version
 
 .DS_Store
 .AppleDouble
