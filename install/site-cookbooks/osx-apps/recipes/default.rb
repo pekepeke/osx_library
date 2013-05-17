@@ -56,6 +56,9 @@ Applications = {
     source: 'http://www.boastr.de/BetterTouchTool.zip',
     provider: 'zip',
   },
+  'atMonitor' => {
+    source: 'http://download.atpurpose.com/atMonitor/atMonitor.zip',
+  },
   'Alfred 2' => {
     source: 'http://cachefly.alfredapp.com/Alfred_2.0.3_187.zip',
     provider: 'zip',
