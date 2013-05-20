@@ -52,6 +52,10 @@ Applications = {
     source: "http://www.trankynam.com/xtrafinder/downloads/XtraFinder.dmg",
     type: "pkg",
   },
+  "TakeMePop" => {
+    source: 'http://hetima.com/takemepop/TakeMePop1.1.zip',
+    provider: 'zip',
+  },
   'BetterTouchTool' => {
     source: 'http://www.boastr.de/BetterTouchTool.zip',
     provider: 'zip',
@@ -136,10 +140,21 @@ Applications = {
   "Cyberduck"=> {
     source: "http://cyberduck.ch/Cyberduck-4.3.1.zip",
   },
+  "Charles"=> {
+    source: 'www.charlesproxy.com/assets/release/3.7/charles-proxy-3.7.dmg',
+    provider: 'dmg',
+  },
   "Sequel Pro"=> {
     source: "https://sequel-pro.googlecode.com/files/sequel-pro-1.0.2.dmg",
     provider: 'dmg',
-  }
+  },
+  "Simulator Folders" =>{
+    source: 'http://www.gettracktime.com/dbrd/download.php?id=8',
+    provider: 'zip',
+  },
+  # "Qmind" => {
+  #   source: 'https://bitbucket.org/qvacua/qvacua/downloads/Qmind-0.3.1.zip'
+  # },
   # "Silverlight"=> {
   #   source: "http://silverlight.dlservice.microsoft.com/download/D/C/2/DC2D5838-9138-4D25-AA92-52F61F7C51E6/runtime/Silverlight.dmg",
   #   type: "pkg",
