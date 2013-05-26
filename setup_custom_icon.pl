@@ -13,10 +13,10 @@ use File::Copy qw(copy);
 
 my %FILES = (
     "Sublime\ Text\ 2.icns" => "/Applications/Sublime Text 2.app/Contents/Resources/",
-    "MacVim.icns" => "/Applications/MacVim.app/Contents/Resources/",
     "muCommander.icns" => "/Applications/muCommander.app/Contents/Resources/icon.icns",
     "VimIcon.icns" => "/Applications/Vim.app/Contents/Resources/app.icns",
     "kdiff3.icns" => "/Applications/kdiff3.app/Contents/Resources/kdiff3.icns",
+    "MacVim.icns" => "/Applications/MacVim.app/Contents/Resources/",
 );
 
 sub usage {
@@ -32,10 +32,12 @@ GetOptions(
 usage if $opt_help;
 
 for my $name (keys %FILES) {
-    my $dest = $FILES{$name};
-    next unless ( -e $dest);
-    print "copy $name -> $dest\n";
-    copy($FindBin::Bin . "/tools/ApplicationIcons/" . $name, $dest) or warn "cannot copy file : $name - $dest : $!";
+    my $fpath = $FILES{$name};
+    for my $dest ("$ENV{HOME}/$fpath", $fpath) {
+        next unless ( -e $dest);
+        print "copy $name -> $dest\n";
+        copy($FindBin::Bin . "/tools/ApplicationIcons/" . $name, $dest) or warn "cannot copy file : $name - $dest : $!";
+    }
 }
 
 __END__
