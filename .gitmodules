@@ -43,3 +43,39 @@
 [submodule "Library/Application Support/Coda 2/Modes/django-template.mode"]
 	path = Library/Application Support/Coda 2/Modes/django-template.mode
 	url = git://github.com/jbergantine/django-template.mode.git
+[submodule "Library/Application Support/Avian/Bundles/Validate On Save.tmbundle"]
+	path = Library/Application Support/Avian/Bundles/Validate On Save.tmbundle
+	url = git://github.com/sxtxixtxcxh/validate-on-save.tmbundle.git
+[submodule "Library/Application Support/Avian/Bundles/Code Beautifier.tmbundle"]
+	path = Library/Application Support/Avian/Bundles/Code Beautifier.tmbundle
+	url = git://github.com/mocoso/code-beautifier.tmbundle.git
+[submodule "Library/Application Support/Avian/Bundles/Ack.tmbundle"]
+	path = Library/Application Support/Avian/Bundles/Ack.tmbundle
+	url = git://github.com/protocool/ack-tmbundle.git
+[submodule "Library/Application Support/Avian/Bundles/JavaScript Jasmine.tmbundle"]
+	path = Library/Application Support/Avian/Bundles/JavaScript Jasmine.tmbundle
+	url = git://github.com/pivotalexperimental/jasmine-tmbundle.git
+[submodule "Library/Application Support/Avian/Bundles/PHP-Twig.tmbundle"]
+	path = Library/Application Support/Avian/Bundles/PHP-Twig.tmbundle
+	url = git://github.com/Anomareh/PHP-Twig.tmbundle.git
+[submodule "Library/Application Support/Avian/Bundles/JavaScript Node.tmbundle"]
+	path = Library/Application Support/Avian/Bundles/JavaScript Node.tmbundle
+	url = git://github.com/drnic/javascript-node.tmbundle.git
+[submodule "Library/Application Support/Avian/Bundles/Bundler.tmbundle"]
+	path = Library/Application Support/Avian/Bundles/Bundler.tmbundle
+	url = git://github.com/drnic/Bundler.tmbundle.git
+[submodule "Library/Application Support/Avian/Bundles/JavaScript Appcelerator Titanium Mobile.tmbundle"]
+	path = Library/Application Support/Avian/Bundles/JavaScript Appcelerator Titanium Mobile.tmbundle
+	url = git://github.com/subtleGradient/JavaScript-Appcelerator-Titanium-Mobile.tmbundle.git
+[submodule "Library/Application Support/Avian/Bundles/Nginx.tmbundle"]
+	path = Library/Application Support/Avian/Bundles/Nginx.tmbundle
+	url = git://github.com/johnmuhl/nginx-tmbundle.git
+[submodule "Library/Application Support/Avian/Bundles/Ruby Shoulda.tmbundle"]
+	path = Library/Application Support/Avian/Bundles/Ruby Shoulda.tmbundle
+	url = git://github.com/drnic/ruby-shoulda-tmbundle.git
+[submodule "Library/Application Support/Avian/Bundles/Chef.tmbundle"]
+	path = Library/Application Support/Avian/Bundles/Chef.tmbundle
+	url = git://github.com/drnic/Chef.tmbundle.git
+[submodule "Library/Application Support/Avian/Bundles/Capistrano.tmbundle"]
+	path = Library/Application Support/Avian/Bundles/Capistrano.tmbundle
+	url = git://github.com/vigetlabs/capistrano-tmbundle.git
