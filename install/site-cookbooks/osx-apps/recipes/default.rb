@@ -116,6 +116,10 @@ Applications = {
     source: 'http://macvim-kaoriya.googlecode.com/files/macvim-kaoriya-20121213.dmg',
     provider: 'dmg',
   },
+  # "TextMate"=> {
+  #   source: "http://api.textmate.org/downloads/release",
+  #   provider: 'tbz',
+  # },
   "Sublime Text 2"=> {
     dmg_name: "sublimetext2", source: "http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%202.0.1.dmg",
     provider: 'dmg',
@@ -152,6 +156,11 @@ Applications = {
     source: 'http://www.gettracktime.com/dbrd/download.php?id=8',
     provider: 'zip',
   },
+  "Reveal" => {
+    source: "http://download.revealapp.com/Reveal.app.zip",
+    provider: 'zip',
+  },
+  # https://downloads.sourceforge.net/project/limechat/limechat/LimeChat_2.34.tbz?use_mirror=master
   # "Qmind" => {
   #   source: 'https://bitbucket.org/qvacua/qvacua/downloads/Qmind-0.3.1.zip'
   # },
