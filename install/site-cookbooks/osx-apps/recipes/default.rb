@@ -117,9 +117,12 @@ Applications = {
     provider: 'dmg',
   },
   # "TextMate"=> {
-  #   source: "http://api.textmate.org/downloads/release",
+  #   source: "http://api.textmate.org/downloads/release", # tar.bz
   #   provider: 'tbz',
   # },
+  # 'RCDefaultApp' => {
+  #   source: 'http://www.rubicode.com/Downloads/RCDefaultApp-2.1.X.dmg',
+  # }
   "Sublime Text 2"=> {
     dmg_name: "sublimetext2", source: "http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%202.0.1.dmg",
     provider: 'dmg',
