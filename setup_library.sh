@@ -23,7 +23,9 @@ trace() {
 }
 
 install_libraries() {
-  cd $(dirname $0)/Library
+  local cwd=$(pwd)
+  local here=$(cd $(dirname $0);pwd)
+  cd $here/Library
   (
     IFS=$'\n';
     find . -name '.DS_Store' -exec rm {} \;
@@ -34,6 +36,7 @@ install_libraries() {
       apply_library_file $f
     done
   )
+  install_quicklook_files $here
 }
 
 find_with_maxdepth() {
@@ -92,6 +95,25 @@ other_library_files() {
       done
     fi
   done
+}
+
+install_quicklook_files() {
+  local QL_DIR="$HOME/Library/QuickLook"
+  local repos_root=$1
+  (
+    IFS=$'\n';
+    local zipfiles=$(find $1 -type f -name '*.zip')
+    local name
+    for f in $zipfiles; do
+      name=$(basename $f .zip)
+      if [ ! -e "$QL_DIR/$name" ]; then
+        unzip "$f" -d $QL_DIR
+        echo install : QuickLook plugin [$name]
+      else
+        echo skip : QuickLook plugin [$name]
+      fi
+    done
+  )
 }
 
 apply_library_file() {

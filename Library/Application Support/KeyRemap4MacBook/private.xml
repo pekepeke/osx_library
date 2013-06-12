@@ -19,6 +19,14 @@
         <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION</not>
         <autogen>--KeyToKey-- KeyCode::F6, KeyCode::VK_LOCK_FN</autogen>
       </item>
+			<item>
+				<name>LeaveInsMode with EISUU(Terminal)</name>
+				<identifier>remap.vim_esc_with_eisuu</identifier>
+				<only>TERMINAL, VI</only>
+				<autogen>--KeyToKey-- KeyCode::ESCAPE, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
+				<autogen>--KeyToKey-- KeyCode::C, VK_CONTROL, KeyCode::C, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
+				<autogen>--KeyToKey-- KeyCode::BRACKET_LEFT, ModifierFlag::CONTROL_L, KeyCode::JIS_EISUU, KeyCode::ESCAPE</autogen>
+			</item>
     </list>
     <item>
       <name>Extended Vim Mode</name>

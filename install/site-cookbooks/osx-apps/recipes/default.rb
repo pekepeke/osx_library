@@ -163,6 +163,15 @@ Applications = {
     source: "http://download.revealapp.com/Reveal.app.zip",
     provider: 'zip',
   },
+  'Skitch'=> {
+    source: 'http://evernote.com/download/get.php?file=SkitchMac_v1',
+    provider: 'zip',
+  },
+  'SourceTree'=> {
+    source: 'http://downloads.atlassian.com/software/sourcetree/SourceTree_1.6.1.dmg',
+    type: 'pkg',
+    provider: 'dmg',
+  },
   # https://downloads.sourceforge.net/project/limechat/limechat/LimeChat_2.34.tbz?use_mirror=master
   # "Qmind" => {
   #   source: 'https://bitbucket.org/qvacua/qvacua/downloads/Qmind-0.3.1.zip'
