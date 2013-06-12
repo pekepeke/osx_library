@@ -19,9 +19,9 @@ main() {
   fi
   cd ${LOCAL_DIR}
 
-  ./setup_library.sh
-  ./setup_prefs.sh -a
-  ./setup_custom_icon.pl
+  ./lib/setup_library.sh
+  ./lib/setup_prefs.sh -a
+  ./lib/setup_custom_icon.pl
 
   cd $cwd
 }
