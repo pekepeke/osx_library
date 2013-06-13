@@ -148,7 +148,7 @@ Applications = {
     source: "http://cyberduck.ch/Cyberduck-4.3.1.zip",
   },
   "Charles"=> {
-    source: 'www.charlesproxy.com/assets/release/3.7/charles-proxy-3.7.dmg',
+    source: 'http://www.charlesproxy.com/assets/release/3.7/charles-proxy-3.7.dmg',
     provider: 'dmg',
   },
   "Sequel Pro"=> {
