@@ -108,6 +108,12 @@ Applications = {
     volumes_dir: 'vlc-2.0.5',
     provider: 'dmg',
   },
+  "Tomahawk"=> {
+    source: "http://download.tomahawk-player.org/Tomahawk-0.7.0.dmg",
+    provider: 'dmg',
+  },
+
+
   'CotEditor'=> {
     source: 'http://sourceforge.jp/projects/coteditor/downloads/54872/CotEditor_1.3.1.dmg',
     provider: 'dmg',
