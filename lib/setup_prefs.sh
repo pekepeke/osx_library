@@ -4,7 +4,6 @@ opt_apply=0
 APPLICATIONS=$(cat <<EOM
 KeyRemap4MacBook
 GeekTool Helper
-Spectacle
 EOM
 )
 

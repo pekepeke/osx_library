@@ -155,7 +155,9 @@ Applications = {
   },
   "Charles"=> {
     source: 'http://www.charlesproxy.com/assets/release/3.7/charles-proxy-3.7.dmg',
+    volumes_dir: 'Charles Proxy v3.7',
     provider: 'dmg',
+    accept_eula: true,
   },
   "Sequel Pro"=> {
     source: "https://sequel-pro.googlecode.com/files/sequel-pro-1.0.2.dmg",
