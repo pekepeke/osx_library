@@ -29,6 +29,7 @@ install_libraries() {
   (
     IFS=$'\n';
     find . -name '.DS_Store' -exec rm {} \;
+    application_support_files
     for f in $(application_support_files); do
       apply_library_file $f
     done
@@ -53,6 +54,7 @@ application_support_files() {
   # find "Application Support" -depth 2
   for f in $(ls "Application Support"); do
     if [ ! -d "Application Support/$f" ]; then
+      # echo "not found : Application Support/$f"
       continue
     fi
     case $f in
@@ -139,10 +141,12 @@ apply_library_file() {
       local PARENT=$(dirname $TARGET)
       [ ! -e $PARENT ] && trace mkdir -p $PARENT
       if [ -e "$TARGET" ]; then
-        echo "skip : $SRC"
+        echo "skip mkdir : $SRC"
       else
         trace ln -s "$PWD/$SRC" "$TARGET"
       fi
+    else
+      echo "already linked : $SRC"
     fi
   fi
 

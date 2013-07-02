@@ -98,6 +98,10 @@ Applications = {
     provider: 'zip',
     # notifies: "ruby_block[setup-day-o]", # not run successfully
   },
+  'KyPass Companion'=> {
+    source:  'https://dl.dropbox.com/u/154281/KyPass%20Companion.zip',
+    provider: 'zip',
+  },
   # 'HardCoreZipper'=> {
   #   source: 'http://www.geocities.jp/freeggggroup/nf/HardCoreZipper_213.zip',
   #   provider: 'zip',
@@ -131,6 +135,10 @@ Applications = {
   # }
   "Sublime Text 2"=> {
     dmg_name: "sublimetext2", source: "http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%202.0.1.dmg",
+    provider: 'dmg',
+  },
+  "Sublime Text"=> {
+    source: 'http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%20Build%203047.dmg',
     provider: 'dmg',
   },
   "nvALT"=> {
