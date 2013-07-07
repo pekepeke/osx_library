@@ -188,6 +188,10 @@ Applications = {
     type: 'pkg',
     provider: 'dmg',
   },
+  "Gifzo" => {
+    source: 'http://gifzo.net/Gifzo.zip',
+    provider: 'zip',
+  },
   # https://downloads.sourceforge.net/project/limechat/limechat/LimeChat_2.34.tbz?use_mirror=master
   # "Qmind" => {
   #   source: 'https://bitbucket.org/qvacua/qvacua/downloads/Qmind-0.3.1.zip'
