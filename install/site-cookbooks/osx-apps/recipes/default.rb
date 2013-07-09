@@ -93,6 +93,10 @@ Applications = {
     source: 'http://lightheadsw.com/files/releases/com.lightheadsw.Caffeine/Caffeine1.1.1.zip',
     provider: 'zip',
   },
+  'TimeMachineEditor' => {
+    source: 'http://timesoftware.free.fr/timemachineeditor/TimeMachineEditor.zip',
+    provider: 'zip',
+  },
   'Day-O'=> {
     source: 'http://shauninman.com/assets/downloads/Day-O.zip',
     provider: 'zip',
@@ -139,6 +143,10 @@ Applications = {
   },
   "Sublime Text"=> {
     source: 'http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%20Build%203047.dmg',
+    provider: 'dmg',
+  },
+  'Emacs' => {
+    source: 'http://emacsformacosx.com/emacs-builds/Emacs-24.3-universal-10.6.8.dmg',
     provider: 'dmg',
   },
   "nvALT"=> {
