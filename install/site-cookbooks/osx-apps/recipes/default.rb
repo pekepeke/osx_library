@@ -120,7 +120,11 @@ Applications = {
     source: "http://download.tomahawk-player.org/Tomahawk-0.7.0.dmg",
     provider: 'dmg',
   },
-
+  # http://www.mediafire.com/download/1z3ezfqwufyjejv/GoogleMusic.dmg
+  "Google Music"=> {
+    source: "http://205.196.120.147/uaab8yom11cg/1z3ezfqwufyjejv/GoogleMusic.dmg",
+    provider: 'dmg',
+  },
 
   'CotEditor'=> {
     source: 'http://sourceforge.jp/projects/coteditor/downloads/54872/CotEditor_1.3.1.dmg',
