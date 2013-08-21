@@ -121,7 +121,7 @@ Applications = {
     provider: 'dmg',
   },
   # http://www.mediafire.com/download/1z3ezfqwufyjejv/GoogleMusic.dmg
-  "Google Music"=> {
+  'Google Music'=> {
     source: "http://205.196.120.147/uaab8yom11cg/1z3ezfqwufyjejv/GoogleMusic.dmg",
     provider: 'dmg',
   },
@@ -172,6 +172,11 @@ Applications = {
     type: "mpkg",
     provider: 'dmg',
   },
+  # "Vagrant" => {
+  #   source: 'http://files.vagrantup.com/packages/7ec0ee1d00a916f80b109a298bab08e391945243/Vagrant-1.2.7.dmg'
+  #   type: "mpkg",
+  #   provider: 'dmg',
+  # },
   "Cyberduck"=> {
     source: "http://cyberduck.ch/Cyberduck-4.3.1.zip",
   },
@@ -199,7 +204,7 @@ Applications = {
   },
   'SourceTree'=> {
     source: 'http://downloads.atlassian.com/software/sourcetree/SourceTree_1.6.1.dmg',
-    type: 'pkg',
+    # type: 'pkg',
     provider: 'dmg',
   },
   "Gifzo" => {
