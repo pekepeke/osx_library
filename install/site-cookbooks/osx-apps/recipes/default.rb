@@ -10,7 +10,7 @@
 
 require 'fileutils'
 
-include_recipe "homebrew"
+# include_recipe "homebrew"
 include_recipe "dmg"
 include_recipe "zip_app"
 
@@ -156,7 +156,9 @@ Applications = {
   "nvALT"=> {
     source: "http://abyss.designheresy.com/nvalt/files/nvalt2.2b105.zip",
   },
-
+  "LiveDiag"=> {
+    source: 'https://github.com/dataich/LiveDiag/releases/download/1.1.0/LiveDiag.app.zip',
+  },
   'DiffMerge'=> {
     source: 'http://download-us.sourcegear.com/DiffMerge/3.3.2/DiffMerge.3.3.2.1139.dmg',
     provider: 'dmg',
