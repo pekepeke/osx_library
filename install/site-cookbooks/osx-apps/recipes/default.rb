@@ -102,6 +102,10 @@ Applications = {
     provider: 'zip',
     # notifies: "ruby_block[setup-day-o]", # not run successfully
   },
+  'LightPaper' => {
+    source: 'http://cl.ly/0b1u102y3T1n/download/LightPaper_v0.4.0.dmg?ref=downloadbtn',
+    provider: 'dmg',
+  },
   'KyPass Companion'=> {
     source:  'https://dl.dropbox.com/u/154281/KyPass%20Companion.zip',
     provider: 'zip',
