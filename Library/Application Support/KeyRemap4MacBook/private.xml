@@ -84,6 +84,12 @@
           <autogen>--KeyToKey-- KeyCode::A, VK_CONTROL, KeyCode::HOME</autogen>
           <autogen>--KeyToKey-- KeyCode::E, VK_CONTROL, KeyCode::END</autogen>
         </item>
+        <item>
+          <name>Control+Shift+Enter to Shift+F10 on Excel</name>
+          <identifier>option.myemacsmode.excel_control_shift_enter</identifier>
+          <only>EXCEL</only>
+          <autogen>--KeyToKey-- KeyCode::RETURN, VK_CONTROL | VK_SHIFT, KeyCode::F10, ModifierFlag::SHIFT_L</autogen>
+        </item>
       </list>
     </item>
     <item>
