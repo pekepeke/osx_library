@@ -42,6 +42,10 @@ Applications = {
     source: "http://www.skype.com/go/getskype-macosx.dmg",
     provider: 'dmg',
   },
+  'join.me' => {
+    source: 'https://secure.join.me/Download.aspx?installer=mac&webdownload=true',
+    provider: 'dmg',
+  },
 
   "KeyRemap4MacBook" => {
     source: "http://pqrs.org/macosx/keyremap4macbook/files/KeyRemap4MacBook-8.0.0.dmg",
@@ -102,10 +106,6 @@ Applications = {
     provider: 'zip',
     # notifies: "ruby_block[setup-day-o]", # not run successfully
   },
-  'LightPaper' => {
-    source: 'http://cl.ly/0b1u102y3T1n/download/LightPaper_v0.4.0.dmg?ref=downloadbtn',
-    provider: 'dmg',
-  },
   'KyPass Companion'=> {
     source:  'https://dl.dropbox.com/u/154281/KyPass%20Companion.zip',
     provider: 'zip',
@@ -162,6 +162,14 @@ Applications = {
   },
   "LiveDiag"=> {
     source: 'https://github.com/dataich/LiveDiag/releases/download/1.1.0/LiveDiag.app.zip',
+  },
+  'LightPaper' => {
+    source: 'http://cl.ly/0b1u102y3T1n/download/LightPaper_v0.4.0.dmg?ref=downloadbtn',
+    provider: 'dmg',
+  },
+  'haroopad' => {
+    source: 'https://dl.dropboxusercontent.com/s/r2uizj3vyy2nu98/haroopad-v0.7.0.dmg?token_hash=AAF1iaQW8ycDkDNWLXRmw1GH7t1mknnSC5PH_5a2qBOZvg&dl=1',
+    provider: 'dmg',
   },
   'DiffMerge'=> {
     source: 'http://download-us.sourcegear.com/DiffMerge/3.3.2/DiffMerge.3.3.2.1139.dmg',
