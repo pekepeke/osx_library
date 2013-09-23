@@ -44,7 +44,7 @@ Applications = {
   },
   'join.me' => {
     source: 'https://secure.join.me/Download.aspx?installer=mac&webdownload=true',
-    provider: 'dmg',
+    provider: 'zip',
   },
 
   "KeyRemap4MacBook" => {
@@ -169,6 +169,7 @@ Applications = {
   },
   'haroopad' => {
     source: 'https://dl.dropboxusercontent.com/s/r2uizj3vyy2nu98/haroopad-v0.7.0.dmg?token_hash=AAF1iaQW8ycDkDNWLXRmw1GH7t1mknnSC5PH_5a2qBOZvg&dl=1',
+    volumes_dir: 'haroopad v0.7.0',
     provider: 'dmg',
   },
   'DiffMerge'=> {
