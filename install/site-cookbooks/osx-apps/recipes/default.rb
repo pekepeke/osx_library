@@ -215,6 +215,10 @@ Applications = {
     source: 'http://evernote.com/download/get.php?file=SkitchMac_v1',
     provider: 'zip',
   },
+  'RapidSVN' => {
+    source: 'https://github.com/hnakamur/RapidSVN-IntelMac/raw/master/RapidSVN-0.13.0-svn1.7.dmg',
+    provider: 'dmg',
+  },
   'SourceTree'=> {
     source: 'http://downloads.atlassian.com/software/sourcetree/SourceTree_1.6.1.dmg',
     # type: 'pkg',
