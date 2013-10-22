@@ -64,9 +64,9 @@ Applications = {
     source: 'http://www.boastr.de/BetterTouchTool.zip',
     provider: 'zip',
   },
-  'atMonitor' => {
-    source: 'http://download.atpurpose.com/atMonitor/atMonitor.zip',
-  },
+  # 'atMonitor' => {
+  #   source: 'http://download.atpurpose.com/atMonitor/atMonitor.zip',
+  # },
   'Alfred 2' => {
     source: 'http://cachefly.alfredapp.com/Alfred_2.0.3_187.zip',
     provider: 'zip',
@@ -215,6 +215,10 @@ Applications = {
     source: 'http://evernote.com/download/get.php?file=SkitchMac_v1',
     provider: 'zip',
   },
+  'Google Web Designer' => {
+    source: 'https://dl.google.com/webdesigner/mac/shell/googlewebdesigner_mac.dmg',
+    provider: 'dmg',
+  },
   'RapidSVN' => {
     source: 'https://github.com/hnakamur/RapidSVN-IntelMac/raw/master/RapidSVN-0.13.0-svn1.7.dmg',
     provider: 'dmg',
@@ -227,6 +231,11 @@ Applications = {
   "Gifzo" => {
     source: 'http://gifzo.net/Gifzo.zip',
     provider: 'zip',
+  },
+  "PhoneClean" => {
+    source: 'http://www.imobie.com/product/phoneclean-mac.dmg',
+    provider: 'dmg',
+    volumes_dir: 'PhonClean Installer',
   },
   # https://downloads.sourceforge.net/project/limechat/limechat/LimeChat_2.34.tbz?use_mirror=master
   # "Qmind" => {
