@@ -90,6 +90,18 @@
           <only>EXCEL</only>
           <autogen>--KeyToKey-- KeyCode::RETURN, VK_CONTROL | VK_SHIFT, KeyCode::F10, ModifierFlag::SHIFT_L</autogen>
         </item>
+        <item>
+          <name>F4 to Control+Y on Excel</name>
+          <identifier>option.myemacsmode.excel_f4</identifier>
+          <only>EXCEL</only>
+          <autogen>--KeyToKey-- KeyCode::F4, KeyCode::Y, ModifierFlag::CONTROL_L</autogen>
+        </item>
+        <item>
+          <name>Command + Fn to Shift+F10 on Excel</name>
+          <identifier>option.myemacsmode.excel_command_fn</identifier>
+          <only>EXCEL</only>
+          <autogen>--KeyToKey-- KeyCode::FN, KeyCode::COMMAND_R, KeyCode::F10, ModifierFlag::SHIFT_L</autogen>
+        </item>
       </list>
     </item>
     <item>
