@@ -19,14 +19,14 @@
         <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION</not>
         <autogen>--KeyToKey-- KeyCode::F6, KeyCode::VK_LOCK_FN</autogen>
       </item>
-			<item>
-				<name>LeaveInsMode with EISUU(Terminal)</name>
-				<identifier>remap.vim_esc_with_eisuu</identifier>
-				<only>TERMINAL, VI</only>
-				<autogen>--KeyToKey-- KeyCode::ESCAPE, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
-				<autogen>--KeyToKey-- KeyCode::C, VK_CONTROL, KeyCode::C, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
-				<autogen>--KeyToKey-- KeyCode::BRACKET_LEFT, ModifierFlag::CONTROL_L, KeyCode::JIS_EISUU, KeyCode::ESCAPE</autogen>
-			</item>
+      <item>
+        <name>LeaveInsMode with EISUU(Terminal)</name>
+        <identifier>remap.vim_esc_with_eisuu</identifier>
+        <only>TERMINAL, VI</only>
+        <autogen>--KeyToKey-- KeyCode::ESCAPE, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
+        <autogen>--KeyToKey-- KeyCode::C, VK_CONTROL, KeyCode::C, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
+        <autogen>--KeyToKey-- KeyCode::BRACKET_LEFT, ModifierFlag::CONTROL_L, KeyCode::JIS_EISUU, KeyCode::ESCAPE</autogen>
+      </item>
     </list>
     <item>
       <name>Extended Vim Mode</name>
@@ -95,12 +95,26 @@
           <identifier>option.myemacsmode.excel_f4</identifier>
           <only>EXCEL</only>
           <autogen>--KeyToKey-- KeyCode::F4, KeyCode::Y, ModifierFlag::CONTROL_L</autogen>
+
+          <autogen>--KeyToKey-- KeyCode::F4, VK_SHIFT, KeyCode::F4, ModifierFlag::SHIFT_L</autogen>
+          <autogen>--KeyToKey-- KeyCode::F4, VK_CONTROL, KeyCode::F4, ModifierFlag::CONTROL_L</autogen>
+          <autogen>--KeyToKey-- KeyCode::F4, VK_COMMAND, KeyCode::F4, ModifierFlag::COMMAND_L</autogen>
+          <autogen>--KeyToKey-- KeyCode::F4, VK_OPTION, KeyCode::F4, ModifierFlag::OPTION_L</autogen>
+          <autogen>--KeyToKey-- KeyCode::F4, VK_CONTROL | VK_COMMAND, KeyCode::F4, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L</autogen>
+          <autogen>--KeyToKey-- KeyCode::F4, VK_CONTROL | VK_SHIFT, KeyCode::F4, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L</autogen>
+          <autogen>--KeyToKey-- KeyCode::F4, VK_CONTROL | VK_OPTION, KeyCode::F4,  ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L</autogen>
+          <autogen>--KeyToKey-- KeyCode::F4, VK_CONTROL | VK_OPTION | VK_COMMAND, KeyCode::F4,  ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L</autogen>
+          <autogen>--KeyToKey-- KeyCode::F4, VK_CONTROL | VK_OPTION | VK_SHIFT, KeyCode::F4,  ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L</autogen>
+          <autogen>--KeyToKey-- KeyCode::F4, VK_CONTROL | VK_COMMAND | VK_SHIFT, KeyCode::F4,  ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L</autogen>
+          <autogen>--KeyToKey-- KeyCode::F4, VK_CONTROL | VK_OPTION | VK_COMMAND | VK_SHIFT, KeyCode::F4,  ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L</autogen>
+          <autogen>--KeyToKey-- KeyCode::F4, VK_OPTION | VK_COMMAND, KeyCode::F4,  ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L</autogen>
+          <autogen>--KeyToKey-- KeyCode::F4, VK_OPTION | VK_COMMAND | VK_SHIFT, KeyCode::F4,  ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L</autogen>
         </item>
         <item>
-          <name>Command + Fn to Shift+F10 on Excel</name>
-          <identifier>option.myemacsmode.excel_command_fn</identifier>
+          <name>Command_R to Shift+F10 on Excel</name>
+          <identifier>option.myemacsmode.excel_command_r</identifier>
           <only>EXCEL</only>
-          <autogen>--KeyToKey-- KeyCode::FN, KeyCode::COMMAND_R, KeyCode::F10, ModifierFlag::SHIFT_L</autogen>
+          <autogen>--KeyToKey-- KeyCode::COMMAND_R, KeyCode::F10, ModifierFlag::SHIFT_L</autogen>
         </item>
       </list>
     </item>
@@ -164,7 +178,7 @@
         <list>
           <item>
             <name>Ignore Multi KeyPress</name>
-                <identifier>option.myemacsmode__ignoremultikeypress</identifier>
+            <identifier>option.myemacsmode__ignoremultikeypress</identifier>
             <not>VI, VICO, FIREFOX, EMACS, TERMINAL, VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, X11 </not>
             <autogen>--KeyToKey-- KeyCode::P, VK_CONTROL | VK_COMMAND, KeyCode::P, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L</autogen>
             <autogen>--KeyToKey-- KeyCode::P, VK_CONTROL | VK_OPTION, KeyCode::P,  ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L</autogen>
