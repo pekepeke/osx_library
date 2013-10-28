@@ -55,6 +55,7 @@ Applications = {
   "XtraFinder" => {
     source: "http://www.trankynam.com/xtrafinder/downloads/XtraFinder.dmg",
     type: "pkg",
+    provider: 'dmg',
   },
   "TakeMePop" => {
     source: 'http://hetima.com/takemepop/TakeMePop1.1.zip',
@@ -237,6 +238,11 @@ Applications = {
     provider: 'dmg',
     volumes_dir: 'PhonClean Installer',
   },
+  'Utilities/XQuartz' => {
+    source: 'http://xquartz.macosforge.org/downloads/SL/XQuartz-2.7.4.dmg',
+    type: 'pkg',
+    volumes_dir: 'XQuartz-2.7.4',
+  }
   # https://downloads.sourceforge.net/project/limechat/limechat/LimeChat_2.34.tbz?use_mirror=master
   # "Qmind" => {
   #   source: 'https://bitbucket.org/qvacua/qvacua/downloads/Qmind-0.3.1.zip'
