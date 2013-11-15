@@ -1,8 +1,7 @@
 anchor-as-name: no
-doctype: auto
 drop-empty-paras: no
 fix-uri: no
-literal-attributes: yes
+literal-attributes: no
 merge-divs: no
 merge-spans: no
 numeric-entities: no
@@ -10,17 +9,19 @@ preserve-entities: yes
 quote-ampersand: no
 quote-marks: no
 show-body-only: no
-indent: auto
-indent-spaces: 4
-tab-size: 4
+indent: no
+indent-spaces: 1
+tab-size: 1
 wrap: 0
-wrap-asp: no
-wrap-jste: no
-wrap-php: no
-wrap-sections: no
+wrap-asp: yes
+wrap-jste: yes
+wrap-php: yes
+wrap-sections: yes
 tidy-mark: no
 logical-emphasis: no
-new-blocklevel-tags: article,aside,command,canvas,dialog,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,meter
+vertical-space: no
+new-blocklevel-tags: 
+article,aside,command,canvas,dialog,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,meter
 new-inline-tags: video,audio,canvas,ruby,rt,rp,time,meter,progress,datalist,keygen,mark,output,source,wbr
 
 // Change these only if you need to debug a problem with Tidy

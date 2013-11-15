@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>12C60</string>
+	<string>12F37</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
@@ -19,11 +19,11 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>4.0</string>
+	<string>4.1</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>4.0</string>
+	<string>4.1</string>
 	<key>CodaPlugInMinimumAPIVersion</key>
 	<string>5</string>
 	<key>CodaPlugInSupportedAPIVersion</key>
