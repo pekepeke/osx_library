@@ -204,6 +204,10 @@ Applications = {
     source: "https://sequel-pro.googlecode.com/files/sequel-pro-1.0.2.dmg",
     provider: 'dmg',
   },
+  "Robomongo" => {
+    source: "http://robomongo.org/files/mac/Robomongo-0.8.4-RC2-x86_64.zip",
+    provider: 'zip',
+  },
   "Simulator Folders" =>{
     source: 'http://www.gettracktime.com/dbrd/download.php?id=8',
     provider: 'zip',
