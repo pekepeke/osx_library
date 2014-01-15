@@ -107,10 +107,10 @@ Applications = {
     provider: 'zip',
     # notifies: "ruby_block[setup-day-o]", # not run successfully
   },
-  'KyPass Companion'=> {
-    source:  'https://dl.dropbox.com/u/154281/KyPass%20Companion.zip',
-    provider: 'zip',
-  },
+  # 'KyPass Companion'=> {
+  #   source:  'https://dl.dropbox.com/u/154281/KyPass%20Companion.zip',
+  #   provider: 'zip',
+  # },
   # 'HardCoreZipper'=> {
   #   source: 'http://www.geocities.jp/freeggggroup/nf/HardCoreZipper_213.zip',
   #   provider: 'zip',
