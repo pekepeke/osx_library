@@ -6,6 +6,7 @@ tap homebrew/versions || true
 tap pekepeke/homebrew-pekepeke || true
 tap phinze/cask || true
 install brew-cask
+tap pekepeke/homebrew-pekepekecask || true
 
 update
 
