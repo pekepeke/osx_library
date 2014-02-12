@@ -37,7 +37,6 @@ install_libraries() {
       apply_library_file $f
     done
   )
-  install_quicklook_files $here
 }
 
 find_with_maxdepth() {
@@ -97,30 +96,6 @@ other_library_files() {
       done
     fi
   done
-}
-
-install_quicklook_files() {
-  local QL_DIR="$HOME/Library/QuickLook"
-  local repos_root=$1
-  local installed=0
-  (
-    IFS=$'\n';
-    local zipfiles=$(find $1 -type f -name '*.zip')
-    local name
-    for f in $zipfiles; do
-      name=$(basename $f .zip)
-      if [ ! -e "$QL_DIR/$name" ]; then
-        unzip "$f" -d $QL_DIR
-        echo install : QuickLook plugin [$name]
-        installed=1
-      else
-        echo skip : QuickLook plugin [$name]
-      fi
-    done
-  )
-  if [ $installed -eq 1 ]; then
-    qlmanage -r
-  fi
 }
 
 apply_library_file() {

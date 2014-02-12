@@ -5,18 +5,18 @@ tap homebrew/dupes || true
 tap homebrew/versions || true
 tap pekepeke/homebrew-pekepeke || true
 tap phinze/cask || true
-install brew-cask
 tap pekepeke/homebrew-pekepekecask || true
 
 update
 
+install brew-cask
 install bdw-gc
 install coreutils
 install gettext
 install readline
 install automake
 install autoconf
-install cmake
+install cmake || true
 install glib
 install boost
 install lua
@@ -51,12 +51,12 @@ install rlwrap
 install webkit2png
 install jpeg-turbo
 install optipng
-install vim --with-lua --with-python --with-ruby
-install nginx
+install vim --with-lua --with-python --with-ruby || true
+install nginx || true
 
-install git
-install mercurial
-install subversion --unicode-path
+install git || true
+install mercurial || true
+install subversion --unicode-path || true
 install tig
 
 install qt4
@@ -73,10 +73,10 @@ cask install join-me
 cask install skype
 cask install keyremap4macbook
 cask install xtrafinder
-# takemepop
+cask install takemepop
 cask install bettertouchtool
 cask install alfred
-# googlejapaneseinput
+cask install google-japanese-input
 cask install clipmenu
 cask install appcleaner
 cask install ziipeg
@@ -87,18 +87,18 @@ cask install day-o
 # kypass companion -> mac app store
 cask install vlc
 cask install tomahawk
-# google music
+cask install google-music
 cask install coteditor
 # macvim-kaoriya
 cask install sublime-text
 # subl
 # emacs
 cask install nvalt
-# livediag
+cask install livediag
 cask install lightpaper
 cask install haroopad
 cask install diffmerge
-# stroy
+cask install stroy
 cask install virtualbox
 cask install cyberduck
 cask install charles
@@ -108,10 +108,26 @@ cask install simulator-folders
 cask install reveal
 cask install skitch
 cask install google-web-designer
-# rapidsvn
+cask install rapid-svn
 cask install sourcetree
 # gifzo
 cask install phoneclean
 cask install xquartz
 cask install keepassx
 cask install google-music-manager
+# quicklook
+cask install qlcolorcode
+cask install qlstephen
+cask install quicklook-json
+cask install qlprettypatch
+cask install quicklook-csv
+cask install betterzipql
+cask install webp-quicklook
+cask install suspicious-package
+cask install qlimagesize
+# cask install qlmarkdown
+cask install multimarkdown-qlgenerator
+cask install fjn-web-archive-ql
+cask install thong-ql
+cask install ql-sqlite3
+

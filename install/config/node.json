@@ -1,9 +1,0 @@
-{
-  "platform": "mac_os_x",
-  "run_list": [
-    "recipe[homebrew]",
-    "recipe[dmg]",
-    "recipe[zip_app]",
-    "recipe[osx-apps]"
-  ]
-}
