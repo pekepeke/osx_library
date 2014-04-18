@@ -76,9 +76,6 @@
 [submodule "Library/Application Support/Avian/Bundles/Chef.tmbundle"]
 	path = Library/Application Support/Avian/Bundles/Chef.tmbundle
 	url = git://github.com/drnic/Chef.tmbundle.git
-[submodule "Library/Application Support/Avian/Bundles/Capistrano.tmbundle"]
-	path = Library/Application Support/Avian/Bundles/Capistrano.tmbundle
-	url = git://github.com/vigetlabs/capistrano-tmbundle.git
 [submodule "Library/Application Support/Avian/Bundles/DashMate.tmbundle"]
 	path = Library/Application Support/Avian/Bundles/DashMate.tmbundle
 	url = git://github.com/ram-nadella/DashMate.tmbundle.git

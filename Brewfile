@@ -64,7 +64,7 @@ install sip
 install python --framework
 install pyqt
 
-cask install iterm2
+# browser
 cask install firefox
 cask install google-chrome
 cask install dropbox
@@ -76,7 +76,7 @@ cask install xtrafinder
 cask install takemepop
 cask install bettertouchtool
 cask install alfred
-cask install google-japanese-input
+cask install google-japanese-ime
 cask install clipmenu
 cask install appcleaner
 cask install ziipeg
@@ -85,9 +85,14 @@ cask install caffeine
 cask install timemachineeditor
 cask install day-o
 # kypass companion -> mac app store
+
+## Multimedia
 cask install vlc
 cask install tomahawk
 cask install google-music
+cask install google-music-manager
+
+## Editor
 cask install coteditor
 # macvim-kaoriya
 cask install sublime-text
@@ -96,8 +101,12 @@ cask install sublime-text
 cask install nvalt
 cask install livediag
 cask install lightpaper
-cask install haroopad
+# cask install haroopad
+
+## Dev Tools
+cask install iterm2
 cask install diffmerge
+cask install p4merge
 cask install stroy
 cask install virtualbox
 cask install cyberduck
@@ -110,11 +119,12 @@ cask install skitch
 cask install google-web-designer
 cask install rapid-svn
 cask install sourcetree
+cask install google-web-designer
 # gifzo
 cask install phoneclean
 cask install xquartz
 cask install keepassx
-cask install google-music-manager
+
 # quicklook
 cask install qlcolorcode
 cask install qlstephen
