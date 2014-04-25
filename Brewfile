@@ -67,10 +67,19 @@ install pyqt
 # browser
 cask install firefox
 cask install google-chrome
+cask install silverlight
+cask install flash
+cask install flip4mac
+
+# file
 cask install dropbox
 cask install google-drive
+
+# communication
 cask install join-me
 cask install skype
+
+# utilities
 cask install keyremap4macbook
 cask install xtrafinder
 cask install takemepop
@@ -84,6 +93,7 @@ cask install keka
 cask install caffeine
 cask install timemachineeditor
 cask install day-o
+cask install grandperspective
 # kypass companion -> mac app store
 
 ## Multimedia
@@ -91,17 +101,19 @@ cask install vlc
 cask install tomahawk
 cask install google-music
 cask install google-music-manager
+cask install handbrake
 
 ## Editor
 cask install coteditor
+cask install textmate
 # macvim-kaoriya
-cask install sublime-text
-# subl
+# cask install sublime-text
 # emacs
 cask install nvalt
 cask install livediag
-cask install lightpaper
+# cask install lightpaper
 # cask install haroopad
+cask install libreoffice
 
 ## Dev Tools
 cask install iterm2
@@ -109,21 +121,23 @@ cask install diffmerge
 cask install p4merge
 cask install stroy
 cask install virtualbox
+cask install vagrant
+
 cask install cyberduck
 cask install charles
 cask install sequel-pro
+cask install pg-commander
 cask install robomongo
 cask install simulator-folders
-cask install reveal
-cask install skitch
+# cask install reveal
+cask install xquartz
 cask install google-web-designer
 cask install rapid-svn
 cask install sourcetree
-cask install google-web-designer
 # gifzo
 cask install phoneclean
-cask install xquartz
 cask install keepassx
+cask install skitch
 
 # quicklook
 cask install qlcolorcode
