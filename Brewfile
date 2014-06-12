@@ -99,7 +99,8 @@ cask install grandperspective
 ## Multimedia
 cask install vlc
 cask install tomahawk
-cask install google-music
+# cask install google-music
+cask install radiant-player
 cask install google-music-manager
 cask install handbrake
 
