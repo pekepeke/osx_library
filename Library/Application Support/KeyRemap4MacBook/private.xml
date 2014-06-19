@@ -124,19 +124,19 @@
         <item>
           <name>Command_R tap toggles Normal Mode</name>
           <identifier>remap.my.vimnormal_commandr_toggle</identifier>
-          <not>TERMINAL, VI, VICO, PASSWORD, FIREFOX, EMACS, VIRTUALMACHINE, REMOTEDESKTOPCONNECTION </not>
+          <not>TERMINAL, VI, VICO, PASSWORD, FIREFOX, EMACS, VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, XCODE </not>
           <autogen>--KeyOverlaidModifier-- KeyCode::COMMAND_R, KeyCode::COMMAND_R, KeyCode::VK_LOCK_ALL_FORCE_OFF, KeyCode::VK_CONFIG_TOGGLE_notsave_ubiq_vimnormal, KeyCode::VK_CONFIG_FORCE_OFF_notsave_g_operator_pending, KeyCode::VK_CONFIG_FORCE_OFF_notsave_c_w_operator_pending</autogen>
         </item>
         <item>
           <name>Control+W to Delete Backword Word</name>
           <identifier>option.myvimmode_controlW</identifier>
-          <not>VI, VICO, FIREFOX, EMACS, TERMINAL, VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, X11, ECLIPSE</not>
+          <not>VI, VICO, FIREFOX, EMACS, TERMINAL, VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, X11, ECLIPSE, XCODE</not>
           <autogen>--KeyToKey-- KeyCode::W, VK_CONTROL, KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L, KeyCode::DELETE</autogen>
         </item>
         <item>
           <name>Control+U to Delete Line</name>
           <identifier>option.myvimmode_controlU</identifier>
-          <not>VI, VICO, FIREFOX, EMACS, TERMINAL, VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, X11, ECLIPSE</not>
+          <not>VI, VICO, FIREFOX, EMACS, TERMINAL, VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, X11, ECLIPSE, XCODE</not>
           <autogen>--KeyToKey-- KeyCode::U, VK_CONTROL, KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L, KeyCode::DELETE</autogen>
         </item>
         <item>
@@ -153,7 +153,7 @@
           <block>
             <config_not>notsave.ubiq_vimnormal</config_not>
             <config_only>option.myvimbindings.ubiq_vimnormal_insert</config_only>
-            <not>VI, VICO, FIREFOX, EMACS, TERMINAL, VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, X11</not>
+            <not>VI, VICO, FIREFOX, EMACS, TERMINAL, VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, X11, XCODE</not>
             <!-- not>VI, VICO, FIREFOX, EMACS, TERMINAL, VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, X11, ECLIPSE</not>
               <not>TERMINAL, VI, VICO, PASSWORD, FIREFOX, EMACS</not -->
 
@@ -179,7 +179,7 @@
           <item>
             <name>Ignore Multi KeyPress</name>
             <identifier>option.myemacsmode__ignoremultikeypress</identifier>
-            <not>VI, VICO, FIREFOX, EMACS, TERMINAL, VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, X11, XCODE </not>
+            <not>VI, VICO, FIREFOX, EMACS, TERMINAL, VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, X11, XCODE, XCODE </not>
             <autogen>--KeyToKey-- KeyCode::P, VK_CONTROL | VK_COMMAND, KeyCode::P, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L</autogen>
             <autogen>--KeyToKey-- KeyCode::P, VK_CONTROL | VK_OPTION, KeyCode::P,  ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L</autogen>
             <autogen>--KeyToKey-- KeyCode::P, VK_CONTROL | VK_OPTION | VK_COMMAND, KeyCode::P,  ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L</autogen>
@@ -273,7 +273,8 @@
               <item>
                 <name>Control+PNBF to Up/Down/Left/Right with Eclipse</name>
                 <identifier>option.myemacsmode_witheclipse_controlPNBF</identifier>
-                <not>VI, VICO, FIREFOX, GOOGLE_CHROME, EMACS, TERMINAL, VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, X11, XCODE </not>
+                <not>VI, VICO, FIREFOX, GOOGLE_CHROME, EMACS, TERMINAL, VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, X11 </not>
+								<!-- <not>VI, VICO, FIREFOX, GOOGLE_CHROME, EMACS, TERMINAL, VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, X11, XCODE </not>  -->
                 <autogen>--KeyToKey-- KeyCode::P, VK_CONTROL, KeyCode::CURSOR_UP   </autogen>
                 <autogen>--KeyToKey-- KeyCode::N, VK_CONTROL, KeyCode::CURSOR_DOWN </autogen>
                 <autogen>--KeyToKey-- KeyCode::B, VK_CONTROL, KeyCode::CURSOR_LEFT </autogen>
@@ -282,7 +283,7 @@
               <item>
                 <name>Control+PN to Up/Down with Eclipse</name>
                 <identifier>option.myemacsmode_witheclipse_controlPN</identifier>
-                <not>VI, VICO, FIREFOX, GOOGLE_CHROME, EMACS, TERMINAL, VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, X11, XCODE </not>
+                <not>VI, VICO, FIREFOX, GOOGLE_CHROME, EMACS, TERMINAL, VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, X11 </not>
                 <autogen>--KeyToKey-- KeyCode::P, VK_CONTROL, KeyCode::CURSOR_UP   </autogen>
                 <autogen>--KeyToKey-- KeyCode::N, VK_CONTROL, KeyCode::CURSOR_DOWN </autogen>
               </item>
@@ -304,7 +305,8 @@
           <item>
             <name>Control+PNBF to Up/Down/Left/Right</name>
             <identifier>option.myemacsmode_controlPNBF</identifier>
-            <not>VI, VICO, FIREFOX, GOOGLE_CHROME, EMACS, TERMINAL, VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, X11, ECLIPSE, XCODE</not>
+						<!-- <not>VI, VICO, FIREFOX, GOOGLE_CHROME, EMACS, TERMINAL, VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, X11, ECLIPSE, XCODE</not> -->
+            <not>VI, VICO, FIREFOX, GOOGLE_CHROME, EMACS, TERMINAL, VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, X11, ECLIPSE</not>
             <autogen>--KeyToKey-- KeyCode::P, VK_CONTROL, KeyCode::CURSOR_UP   </autogen>
             <autogen>--KeyToKey-- KeyCode::N, VK_CONTROL, KeyCode::CURSOR_DOWN </autogen>
             <autogen>--KeyToKey-- KeyCode::B, VK_CONTROL, KeyCode::CURSOR_LEFT </autogen>

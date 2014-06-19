@@ -38,7 +38,6 @@ install tmux
 install reattach-to-user-namespace
 install imagemagick
 install the_silver_searcher
-install sqlite
 install ngrep
 install nkf
 install gnu-sed
@@ -55,6 +54,7 @@ install vim --with-lua --with-python --with-ruby || true
 install nginx || true
 
 install git || true
+install gibo || true
 install mercurial || true
 install subversion --unicode-path || true
 install tig
@@ -64,8 +64,15 @@ install sip
 install python --framework
 install pyqt
 
+install sqlite
+install mysql || true
+install sqlite || true
+install mongodb || true
+install elasticsearch || true
+
 # browser
 cask install firefox
+cask install chromium
 cask install google-chrome
 cask install silverlight
 cask install flash
@@ -94,6 +101,7 @@ cask install caffeine
 cask install timemachineeditor
 cask install day-o
 cask install grandperspective
+cask install xquartz
 # kypass companion -> mac app store
 
 ## Multimedia
@@ -103,10 +111,17 @@ cask install tomahawk
 cask install radiant-player
 cask install google-music-manager
 cask install handbrake
+cask install skitch
+cask install xnviewmp
+# TODO : https://dribbble.com/shots/1582290-PSD-to-PNG-Automator-Action
+# TODO : http://getatraci.net/
 
 ## Editor
 cask install coteditor
 cask install textmate
+cask install intellij-idea-ce
+cask install unity3d
+# cask install nethackcocoa
 # macvim-kaoriya
 # cask install sublime-text
 # emacs
@@ -131,14 +146,13 @@ cask install pg-commander
 cask install robomongo
 cask install simulator-folders
 # cask install reveal
-cask install xquartz
 cask install google-web-designer
 cask install rapid-svn
 cask install sourcetree
+
 # gifzo
 cask install phoneclean
 cask install keepassx
-cask install skitch
 
 # quicklook
 cask install qlcolorcode
