@@ -169,4 +169,5 @@ cask install multimarkdown-qlgenerator
 cask install fjn-web-archive-ql
 cask install thong-ql
 cask install ql-sqlite3
+cask install provisionql
 
