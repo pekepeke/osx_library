@@ -3,6 +3,8 @@ tap homebrew/binary || true
 tap phinze/homebrew-cask || true
 tap homebrew/dupes || true
 tap homebrew/versions || true
+tap homebrew/apache || true
+tap homebrew/homebrew-php || true
 tap pekepeke/homebrew-pekepeke || true
 tap phinze/cask || true
 tap pekepeke/homebrew-pekepekecask || true
