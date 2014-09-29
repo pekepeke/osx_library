@@ -56,6 +56,7 @@ install vim --with-lua --with-python --with-ruby || true
 install nginx || true
 
 install git || true
+install git-now --zsh-completion || true
 install gibo || true
 install mercurial || true
 install subversion --unicode-path || true
@@ -85,11 +86,12 @@ cask install dropbox
 cask install google-drive
 
 # communication
-cask install join-me
+# cask install join-me
 cask install skype
 
 # utilities
-cask install keyremap4macbook
+# cask install keyremap4macbook
+cask install karabiner
 cask install xtrafinder
 cask install takemepop
 cask install bettertouchtool
@@ -115,6 +117,7 @@ cask install google-music-manager
 cask install handbrake
 cask install skitch
 cask install xnviewmp
+cask install gravit
 # TODO : https://dribbble.com/shots/1582290-PSD-to-PNG-Automator-Action
 # TODO : http://getatraci.net/
 
