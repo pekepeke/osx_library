@@ -81,6 +81,9 @@ cask install silverlight
 cask install flash
 cask install flip4mac
 
+# runtime
+cask install adobe-air
+
 # file
 cask install dropbox
 cask install google-drive
@@ -101,11 +104,14 @@ cask install clipmenu
 cask install appcleaner
 cask install ziipeg
 cask install keka
+cask install hardcore-zipper
 cask install caffeine
 cask install timemachineeditor
 cask install day-o
 cask install grandperspective
 cask install xquartz
+cask install dupscanub
+cask install disk-inventory-x
 # kypass companion -> mac app store
 
 ## Multimedia
