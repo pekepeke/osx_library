@@ -83,6 +83,7 @@ cask install flip4mac
 
 # runtime
 cask install adobe-air
+cask install java
 
 # file
 cask install dropbox
@@ -94,6 +95,7 @@ cask install skype
 
 # utilities
 # cask install keyremap4macbook
+cask install clamxav
 cask install karabiner
 cask install xtrafinder
 cask install takemepop
