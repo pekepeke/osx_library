@@ -173,6 +173,7 @@ brew cask install chromium
 
 # runtime {{{2
 brew cask install silverlight
+brew cask install java
 brew cask install flash
 brew cask install flip4mac
 brew cask install adobe-air
@@ -188,6 +189,7 @@ brew cask install skype
 
 # utilities {{{2
 # cask install keyremap4macbook
+brew cask install clamxav
 brew cask install karabiner
 brew cask install xtrafinder
 brew cask install bettertouchtool
