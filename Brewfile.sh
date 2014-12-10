@@ -28,15 +28,27 @@ echo_is_will_upgrade() {
   echo $?
 }
 
-is_installed() {
+installed_brew() {
   if [ -n "$1" ]; then
     error "invalid argument : $@"
     return 255
-  end
+  fi
 
-  if [ $(brew list | awk "$1 == '$1' {print $0}" |wc -l) -gt 0 ]; then
+  if brew info $1 | grep -qF "Not installed"; then
     return 0
-  end
+  fi
+  return 1
+}
+
+installed_cask() {
+  if [ -n "$1" ]; then
+    error "invalid argument : $@"
+    return 255
+  fi
+
+  if brew cask info $1 | grep -qF "Not installed"; then
+    return 0
+  fi
   return 1
 }
 
@@ -61,6 +73,7 @@ if true; then
   local brew_prefix=$(brew --prefix)
   local will_upgrade_mysql=$(echo_is_will_upgrade mysql)
   local will_upgrade_postgresql=$(echo_is_will_upgrade postgresql)
+  local will_upgrade_boot2docker=$(echo_is_will_upgrade boot2docker)
   local timestamp=$(date +'%Y%m%d-%s')
 
   if [ $will_upgrade_postgresql -eq 0 ]; then
@@ -98,6 +111,11 @@ if true; then
 
       launchctl start homebrew.mxcl.postgresql
     fi
+  fi
+  if [ $will_upgrade_boot2docker -eq 0 ]; then
+    boot2docker delete
+    boot2docker download
+    boot2docker init
   fi
 fi
 
