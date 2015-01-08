@@ -15,11 +15,11 @@ is_will_upgrade() {
   if [ -n "$1" ]; then
     error "invalid argument : $@"
     return 255
-  end
+  fi
 
   if [ $(brew outdated | awk "$1 == '$1' {print $0}" |wc -l) -gt 0 ]; then
     return 0
-  end
+  fi
   return 1
 }
 
@@ -52,6 +52,10 @@ installed_cask() {
   return 1
 }
 
+# install homebrew {{{1
+if ! is_executable brew; then
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
 
 # taps {{{1
 brew tap homebrew/binary || true
@@ -164,6 +168,7 @@ brew install jpeg-turbo
 brew install optipng
 brew install vim --with-lua --with-python --with-ruby || true
 brew install nginx || true
+brew install xcproj
 
 brew install git || true
 brew install git-now --zsh-completion || true
@@ -186,8 +191,8 @@ brew install elasticsearch || true
 # cask packages {{{1
 # browser {{{2
 brew cask install firefox
-brew cask install chromium
-# brew cask install google-chrome
+# brew cask install chromium
+brew cask install google-chrome
 
 # runtime {{{2
 brew cask install silverlight
@@ -213,12 +218,14 @@ brew cask install xtrafinder
 brew cask install bettertouchtool
 brew cask install alfred
 brew cask install google-japanese-ime
+brew cask install menumeters
+brew cask install slate
 
 brew cask install takemepop
 brew cask install clipmenu
 brew cask install appcleaner
 
-brew cask install ziipeg
+brew cask install zipeg
 brew cask install keka
 brew cask install hardcore-zipper
 brew cask install macwinzipper
