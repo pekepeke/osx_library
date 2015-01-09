@@ -149,6 +149,7 @@ brew install intltool
 brew install fontconfig
 brew install freetype
 
+brew install rmtrash
 brew install lv
 brew install tmux
 brew install reattach-to-user-namespace
@@ -229,6 +230,7 @@ brew cask install zipeg
 brew cask install keka
 brew cask install hardcore-zipper
 brew cask install macwinzipper
+brew cask install the-unarchiver
 
 brew cask install caffeine
 brew cask install timemachineeditor
@@ -237,6 +239,9 @@ brew cask install grandperspective
 brew cask install xquartz
 brew cask install dupscanub
 brew cask install disk-inventory-x
+brew cask install magican
+brew cask install permanent-eraser
+brew cask install tnef-s-enough
 # kypass companion -> mac app store
 
 ## Multimedia {{{2
@@ -257,6 +262,7 @@ brew cask install coteditor
 brew cask install textmate
 brew cask install intellij-idea-ce
 brew cask install unity3d
+brew cask install textwrangler
 # cask install nethackcocoa
 # macvim-kaoriya
 # cask install sublime-text
@@ -269,6 +275,7 @@ brew cask install livediag
 # cask install lightpaper
 # cask install haroopad
 brew cask install libreoffice
+brew cask install freemind
 
 ## Dev Tools {{{2
 brew cask install iterm2
@@ -282,9 +289,13 @@ brew cask install cyberduck
 brew cask install charles
 brew cask install sequel-pro
 brew cask install pg-commander
+brew cask install astah-community
+brew cask install dbeaver-community
 brew cask install robomongo
 brew cask install pixus
-brew cask install sim-pholders2
+# brew cask install sim-pholders2
+brew cask install simulator-manager
+brew cask install iexplorer
 
 # cask install reveal
 brew cask install google-web-designer
@@ -293,6 +304,8 @@ brew cask install sourcetree
 brew cask install img2icns
 
 brew cask install platypus
+brew cask install fluid
+brew cask install genymotion
 
 # gifzo
 brew cask install phoneclean
