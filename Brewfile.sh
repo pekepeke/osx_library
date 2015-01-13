@@ -60,6 +60,7 @@ fi
 # taps {{{1
 brew tap homebrew/binary || true
 brew tap phinze/homebrew-cask || true
+brew tap gapple/services || true
 brew tap homebrew/dupes || true
 brew tap homebrew/versions || true
 brew tap homebrew/apache || true
@@ -169,7 +170,10 @@ brew install jpeg-turbo
 brew install optipng
 brew install vim --with-lua --with-python --with-ruby || true
 brew install nginx || true
+
 brew install xcproj
+brew install go
+brew install mono
 
 brew install git || true
 brew install git-now --zsh-completion || true
