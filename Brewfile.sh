@@ -53,6 +53,11 @@ installed_cask() {
 }
 
 # install homebrew {{{1
+if ! is_executable xcode-select; then
+  echo "please install Xcode.app" 1>&2
+  exit 1
+fi
+xcode-select --install 1>/dev/null 2>&1
 if ! is_executable brew; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
@@ -225,6 +230,8 @@ brew cask install alfred
 brew cask install google-japanese-ime
 brew cask install menumeters
 brew cask install slate
+brew cask install accessmenubarapps
+brew cask install dash
 
 brew cask install takemepop
 brew cask install clipmenu
@@ -258,8 +265,8 @@ brew cask install handbrake
 brew cask install skitch
 brew cask install xnviewmp
 brew cask install gravit
+brew cask install atraci
 # TODO : https://dribbble.com/shots/1582290-PSD-to-PNG-Automator-Action
-# TODO : http://getatraci.net/
 
 ## Editor {{{2
 brew cask install coteditor
@@ -272,7 +279,7 @@ brew cask install textwrangler
 # cask install sublime-text
 # emacs
 
-brew cask zeroxed
+brew cask 0xed
 
 brew cask install nvalt
 brew cask install livediag
