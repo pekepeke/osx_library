@@ -197,6 +197,7 @@ brew install mysql || true
 brew install sqlite || true
 brew install mongodb || true
 brew install elasticsearch || true
+brew install boot2docker
 
 # cask packages {{{1
 # browser {{{2
