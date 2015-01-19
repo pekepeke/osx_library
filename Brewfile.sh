@@ -314,6 +314,7 @@ brew cask install google-web-designer
 brew cask install rapid-svn
 brew cask install sourcetree
 brew cask install img2icns
+brew cask install integrity
 
 brew cask install platypus
 brew cask install fluid
