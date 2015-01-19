@@ -64,14 +64,14 @@ fi
 
 # taps {{{1
 brew tap homebrew/binary || true
-brew tap phinze/homebrew-cask || true
+# brew tap phinze/homebrew-cask || true
+# brew tap phinze/cask || true
 brew tap gapple/services || true
 brew tap homebrew/dupes || true
 brew tap homebrew/versions || true
 brew tap homebrew/apache || true
 brew tap homebrew/homebrew-php || true
 brew tap pekepeke/homebrew-pekepeke || true
-brew tap phinze/cask || true
 brew tap pekepeke/homebrew-pekepekecask || true
 
 # update {{{1
@@ -80,13 +80,13 @@ brew update
 # upgrade {{{1
 if true; then
   # prepare upgrade {{{2
-  local brew_prefix=$(brew --prefix)
-  local will_upgrade_mysql=$(echo_is_will_upgrade mysql)
-  local will_upgrade_postgresql=$(echo_is_will_upgrade postgresql)
-  local will_upgrade_boot2docker=$(echo_is_will_upgrade boot2docker)
-  local timestamp=$(date +'%Y%m%d-%s')
+  brew_prefix=$(brew --prefix)
+  will_upgrade_mysql=$(echo_is_will_upgrade mysql)
+  will_upgrade_postgresql=$(echo_is_will_upgrade postgresql)
+  will_upgrade_boot2docker=$(echo_is_will_upgrade boot2docker)
+  timestamp=$(date +'%Y%m%d-%s')
 
-  if [ $will_upgrade_postgresql -eq 0 ]; then
+  if [ "$will_upgrade_postgresql" = "0" ]; then
     pg_dumpall > /tmp/pg_dump-$(date +'%Y%m%d%d%H%M').sql
   fi
 
@@ -94,7 +94,7 @@ if true; then
   brew upgrade
 
   # afterexec upgrade {{{2
-  if [ $will_upgrade_mysql -eq 0 ]; then
+  if [ "$will_upgrade_mysql" = "0" ]; then
     launchctl stop homebrew.mxcl.mysql
     # mysql.server stop
     brew link mysql --overwrite
@@ -103,7 +103,7 @@ if true; then
     mysql_upgrade
     sed -i 's/sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES/#\0/' $(brew --cellar mysql)/*/my.cnf
   fi
-  if [ $will_upgrade_postgresql -eq 0 ]; then
+  if [ "$will_upgrade_postgresql" = "0" ]; then
     launchctl stop homebrew.mxcl.postgresql
     old_pgsql_bin=`dirname $(dirname $(which psql))/$(readlink -n $(which psql))`
 
@@ -122,7 +122,7 @@ if true; then
       launchctl start homebrew.mxcl.postgresql
     fi
   fi
-  if [ $will_upgrade_boot2docker -eq 0 ]; then
+  if [ "$will_upgrade_boot2docker" = "0" ]; then
     boot2docker delete
     boot2docker download
     boot2docker init
@@ -131,7 +131,7 @@ fi
 
 
 # brew packages {{{1
-brew install brew-cask
+brew install caskroom/cask/brew-cask
 brew install bdw-gc
 brew install coreutils
 brew install gettext
