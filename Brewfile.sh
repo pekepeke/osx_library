@@ -234,6 +234,7 @@ brew cask install menumeters
 brew cask install slate
 brew cask install accessmenubarapps
 brew cask install dash
+brew cask install geektool
 
 brew cask install takemepop
 brew cask install clipmenu
@@ -255,7 +256,8 @@ brew cask install disk-inventory-x
 brew cask install magican
 brew cask install permanent-eraser
 brew cask install tnef-s-enough
-# kypass companion -> mac app store
+brew cask install key-codes
+brew cask install growl-fork
 
 ## Multimedia {{{2
 brew cask install vlc
@@ -271,6 +273,11 @@ brew cask install gravit
 brew cask install atraci
 # TODO : https://dribbble.com/shots/1582290-PSD-to-PNG-Automator-Action
 
+# own packages {{{2
+brew cask install macvim-kaoriya-custom
+brew cask install zeal
+brew cask install kdiff3-ja
+
 ## Editor {{{2
 brew cask install coteditor
 brew cask install textmate
@@ -282,7 +289,7 @@ brew cask install textwrangler
 # cask install sublime-text
 # emacs
 
-brew cask 0xed
+brew cask install 0xed
 
 brew cask install nvalt
 brew cask install livediag
@@ -345,5 +352,18 @@ brew cask install fjn-web-archive-ql
 brew cask install thong-ql
 brew cask install ql-sqlite3
 brew cask install provisionql
+
+# Memo {{{1
+cat <<EOM
+brew cask install cooviewer
+brew cask install mplayer-osx-extended
+brew cask install timemachineeditor
+brew cask install dupscanub
+EOM
+
+# TODO
+# v2c
+# toyviewer
+# pix compare
 
 # __END__ {{{1
