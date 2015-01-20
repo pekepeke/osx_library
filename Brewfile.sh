@@ -61,6 +61,8 @@ xcode-select --install 1>/dev/null 2>&1
 if ! is_executable brew; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
+brew_prefix=$(brew --prefix)
+[ -w $brew_prefix ] && sudo chown -R $USER $brew_prefix
 
 # taps {{{1
 brew tap homebrew/binary || true
@@ -80,7 +82,6 @@ brew update
 # upgrade {{{1
 if true; then
   # prepare upgrade {{{2
-  brew_prefix=$(brew --prefix)
   will_upgrade_mysql=$(echo_is_will_upgrade mysql)
   will_upgrade_postgresql=$(echo_is_will_upgrade postgresql)
   will_upgrade_boot2docker=$(echo_is_will_upgrade boot2docker)
@@ -261,7 +262,8 @@ brew cask install vlc
 brew cask install tomahawk
 # cask install google-music
 brew cask install radiant-player
-brew cask install google-music-manager
+# brew cask install google-music-manager
+brew cask install music-manager
 brew cask install handbrake
 brew cask install skitch
 brew cask install xnviewmp
@@ -308,6 +310,7 @@ brew cask install pixus
 # brew cask install sim-pholders2
 brew cask install simulator-manager
 brew cask install iexplorer
+brew cask install speedlimit
 
 # cask install reveal
 brew cask install google-web-designer
@@ -315,6 +318,7 @@ brew cask install rapid-svn
 brew cask install sourcetree
 brew cask install img2icns
 brew cask install integrity
+brew cask install sitesucker
 
 brew cask install platypus
 brew cask install fluid
