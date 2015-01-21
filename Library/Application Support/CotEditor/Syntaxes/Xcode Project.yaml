@@ -1,0 +1,53 @@
+extensions:
+- keyString: "pbxproj"
+outlineMenu:
+- beginString: "^/\\* Begin (.+) section \\*/$"
+  keyString: "$1"
+completions: []
+commands: []
+attributes:
+- beginString: "PBXAggregateTarget"
+- beginString: "PBXBuildFile"
+- beginString: "PBXContainerItemProxy"
+- beginString: "PBXCopyFilesBuildPhase"
+- beginString: "PBXFileReference"
+- beginString: "PBXFrameworksBuildPhase"
+- beginString: "PBXGroup"
+- beginString: "PBXHeadersBuildPhase"
+- beginString: "PBXNativeTarget"
+- beginString: "PBXProject"
+- beginString: "PBXReferenceProxy"
+- beginString: "PBXResourcesBuildPhase"
+- beginString: "PBXRezBuildPhase"
+- beginString: "PBXShellScriptBuildPhase"
+- beginString: "PBXSourcesBuildPhase"
+- beginString: "PBXTargetDependency"
+- beginString: "PBXVariantGroup"
+- beginString: "XCBuildConfiguration"
+- beginString: "XCConfigurationList"
+metadata:
+  author: "1024jp"
+  distributionURL: "https://github.com/1024jp/CocoaDeveloperSet-coteditor"
+  version: "1.0"
+  license: "MIT License"
+  lastModified: "2014-10-14"
+characters: []
+comments: []
+values:
+- beginString: "NO"
+- beginString: "YES"
+- beginString: "YES_ERROR"
+numbers:
+- beginString: "\\s[0-9A-F][0-9A-F.]*(?=\\s|;)"
+  regularExpression: true
+strings:
+- beginString: "\""
+  endString: "\""
+keywords:
+- beginString: "\\b[a-z0-9_.]+(?= \\= )"
+  ignoreCase: true
+  regularExpression: true
+commentDelimiters:
+  endDelimiter: "*/"
+  beginDelimiter: "/*"
+  inlineDelimiter: "//"

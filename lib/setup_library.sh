@@ -29,7 +29,24 @@ install_libraries() {
   (
     IFS=$'\n';
     find . -name '.DS_Store' -exec rm {} \;
-    application_support_files
+    copy_application_support_files
+    for f in $(copy_application_support_files); do
+      SRC="$f"
+      TARGET="$HOME/Library/$f"
+      if [ x$opt_uninstall = x1 ]; then
+        [ -e "$TARGET" ] && trace rm "$TARGET"
+        [ -e "$TARGET.org" ] && trace mv "$TARGET.org" "$TARGET"
+      else
+        if [ ! -e "$TARGET.org" ]; then
+          [ -e "$TARGET" ] && mv "$TARGET" "$TARGET.org"
+          echo cp -rp "$SRC" "$TARGET"
+          cp -rp "$SRC" "$TARGET"
+        else
+          echo "already exists: $TARGET"
+        fi
+      fi
+    done
+    # application_support_files
     for f in $(application_support_files); do
       apply_library_file $f
     done
@@ -49,6 +66,22 @@ find_with_maxdepth() {
   find "$1" -mindepth "$2" -maxdepth "$2"
 }
 
+copy_application_support_files() {
+  for f in $(ls "Application Support"); do
+    if [ ! -d "Application Support/$f" ]; then
+      # echo "not found : Application Support/$f"
+      continue
+    fi
+    case $f in
+      CotEditor)
+        find_with_maxdepth "Application Support/$f" 1
+        ;;
+      *)
+        ;;
+    esac
+  done
+}
+
 application_support_files() {
   # find "Application Support" -depth 2
   for f in $(ls "Application Support"); do
@@ -57,7 +90,10 @@ application_support_files() {
       continue
     fi
     case $f in
-      "Sublime Text 2")
+      CotEditor)
+        # do nothing
+        ;;
+      Sublime\ Text\ 2)
         find_with_maxdepth "Application Support/$f" 2
         ;;
       *)
@@ -104,7 +140,7 @@ apply_library_file() {
   local TARGET=$HOME_LIB/$1
 
   if [ x$opt_uninstall = x1 ]; then
-    [ -L $TARGET ] && trace rm $TARGET
+    [ -L "$TARGET" ] && trace rm "$TARGET"
     [ -e "$TARGET.org" ] && trace mv "$TARGET.org" "$TARGET"
   else
     if [ -e "$TARGET.org" ]; then
