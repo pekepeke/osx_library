@@ -176,7 +176,6 @@ brew install rlwrap
 brew install webkit2png
 brew install jpeg-turbo
 brew install optipng
-brew install vim --with-lua --with-python --with-ruby || true
 brew install nginx || true
 
 brew install jq
@@ -199,6 +198,7 @@ brew install tig
 brew install qt4
 brew install sip
 brew install python --framework
+brew install python3 --framework
 brew install pyqt
 
 brew install sqlite
@@ -207,6 +207,8 @@ brew install sqlite || true
 brew install mongodb || true
 brew install elasticsearch || true
 brew install boot2docker
+
+brew install vim --with-lua --with-python --with-ruby || true
 
 # cask packages {{{1
 # browser {{{2
