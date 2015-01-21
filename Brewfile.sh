@@ -76,6 +76,9 @@ brew tap homebrew/homebrew-php || true
 brew tap pekepeke/homebrew-pekepeke || true
 brew tap pekepeke/homebrew-pekepekecask || true
 
+brew tap peco/peco
+brew tap motemen/ghq
+
 # update {{{1
 brew update
 
@@ -169,13 +172,18 @@ brew install tree
 brew install nmap
 brew install wget
 brew install w3m
-brew install jq
 brew install rlwrap
 brew install webkit2png
 brew install jpeg-turbo
 brew install optipng
 brew install vim --with-lua --with-python --with-ruby || true
 brew install nginx || true
+
+brew install jq
+brew install gh
+brew install ghq
+brew install peco
+brew install migemogrep
 
 brew install xcproj
 brew install go
