@@ -353,6 +353,10 @@ brew cask install thong-ql
 brew cask install ql-sqlite3
 brew cask install provisionql
 
+# colorpicker {{{2
+brew cask install colorpicker-skalacolor
+brew cask install colorpicker-propicker
+
 # Memo {{{1
 cat <<EOM
 brew cask install cooviewer
