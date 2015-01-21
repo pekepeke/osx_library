@@ -1,5 +1,7 @@
-#!/bin/sh
+#!/bin/bash
 # vim:fdm=marker sw=2 ts=2 ft=sh expandtab:
+
+exec > >(tee -a /tmp/homebrew-brewfile-$USER.log) 2>&1
 
 # util functions {{{1
 error() {
@@ -12,12 +14,12 @@ is_executable() {
 }
 
 is_will_upgrade() {
-  if [ -n "$1" ]; then
+  if [ -z "$1" ]; then
     error "invalid argument : $@"
     return 255
   fi
 
-  if [ $(brew outdated | awk "$1 == '$1' {print $0}" |wc -l) -gt 0 ]; then
+  if [ $(brew outdated | awk "\$1 == \"$1\" {print \$0}" |wc -l) -gt 0 ]; then
     return 0
   fi
   return 1
