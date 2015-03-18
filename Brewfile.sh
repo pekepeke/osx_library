@@ -240,7 +240,9 @@ brew cask install clamxav
 brew cask install karabiner
 brew cask install xtrafinder
 brew cask install bettertouchtool
-brew cask install alfred
+# brew cask install alfred
+brew cask install flashlight
+brew cask install flashlighttool
 brew cask install google-japanese-ime
 brew cask install menumeters
 brew cask install slate

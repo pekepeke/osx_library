@@ -35,6 +35,12 @@
         <autogen>--KeyToKey-- KeyCode::C, VK_CONTROL, KeyCode::C, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
         <autogen>--KeyToKey-- KeyCode::BRACKET_LEFT, ModifierFlag::CONTROL_L, KeyCode::JIS_EISUU, KeyCode::ESCAPE</autogen>
       </item>
+      <item>
+				<name>Double keypress Option_L to Cmd-Option-Shift-Space(except VM, RDC)</name>
+        <identifier>remap.doublekeypress_option.except_vm_rdc</identifier>
+        <autogen>--DoublePressModifier-- KeyCode::OPTION_L, KeyCode::OPTION_L, KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L</autogen>
+        <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION</not>
+      </item>
     </list>
     <item>
       <name>Extended Vim Mode</name>
