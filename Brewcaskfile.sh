@@ -124,6 +124,7 @@ brew cask install speedlimit
 
 # cask install reveal
 brew cask install google-web-designer
+brew cask install origami
 brew cask install rapid-svn
 brew cask install sourcetree
 brew cask install img2icns
