@@ -212,6 +212,7 @@ brew install mongodb || true
 brew install elasticsearch || true
 brew install boot2docker
 brew install docker-compose
+brew install packer
 
 brew install vim --with-lua --with-python --with-ruby || true
 

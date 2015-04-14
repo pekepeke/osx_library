@@ -107,6 +107,7 @@ brew cask install p4merge
 brew cask install stroy
 brew cask install virtualbox
 brew cask install vagrant
+brew cask install kitematic
 
 brew cask install cyberduck
 brew cask install charles
