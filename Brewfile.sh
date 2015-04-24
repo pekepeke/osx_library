@@ -174,6 +174,8 @@ brew install tree
 brew install nmap
 brew install wget
 brew install w3m
+brew install urlview
+brew install mutt --with-trash-patch --with-debug
 brew install rlwrap
 brew install webkit2png
 brew install jpeg-turbo
