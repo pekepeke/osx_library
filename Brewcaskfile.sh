@@ -83,6 +83,7 @@ brew cask install kdiff3-ja
 ## Editor {{{2
 brew cask install coteditor
 brew cask install textmate
+brew cask install visual-studio-code
 brew cask install intellij-idea-ce
 brew cask install unity3d
 brew cask install textwrangler
