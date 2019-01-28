@@ -78,8 +78,8 @@ brew tap gapple/services || true
 brew tap pekepeke/homebrew-pekepeke || true
 brew tap pekepeke/homebrew-pekepekecask || true
 
-brew tap peco/peco
-brew tap motemen/ghq
+# brew tap peco/peco
+# brew tap motemen/ghq
 
 # update {{{1
 brew update
