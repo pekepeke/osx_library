@@ -12,7 +12,7 @@ brew cask install java
 # brew cask install flash
 # brew cask install flip4mac
 # brew cask install adobe-air
-brew cask install easysimbl
+# brew cask install easysimbl
 
 # file {{{2
 if [ -n "$DESKTOP" ]; then
@@ -75,16 +75,16 @@ if [ -n "$DESKTOP" ]; then
   brew cask install vlc
   brew cask install music-manager
   brew cask install radiant-player
+  brew cask install google-music-manager
 fi
-# brew cask install tomahawk
-# cask install google-music
-# brew cask install google-music-manager
 # brew cask install handbrake
 # brew cask install skitch
 # brew cask install xnviewmp
 # brew cask install gravit
-# brew cask install atraci
 # TODO : https://dribbble.com/shots/1582290-PSD-to-PNG-Automator-Action
+  # brew cask install tomahawk
+  # cask install google-music
+  # brew cask install atraci
 
 # own packages {{{2
 # TODO : mojave
@@ -96,8 +96,8 @@ brew cask install macvim
 ## Editor {{{2
 brew cask install coteditor
 brew cask install visual-studio-code
+  brew cask install textmate
 # if [ -n "$DESKTOP" ]; then
-#   brew cask install textmate
 # fi
 # brew cask install intellij-idea-ce
 # brew cask install unity3d
@@ -167,14 +167,14 @@ brew cask install qlstephen
 brew cask install quicklook-json
 brew cask install qlprettypatch
 brew cask install quicklook-csv
-brew cask install betterzipql
-brew cask install webp-quicklook
+# brew cask install betterzipql # dead?
+# brew cask install webp-quicklook # dead?
 brew cask install suspicious-package
 brew cask install qlimagesize
 # cask install qlmarkdown
 brew cask install multimarkdown-qlgenerator
 brew cask install fjn-web-archive-ql
-brew cask install thong-ql
+# brew cask install thong-ql # dead?
 brew cask install ql-sqlite3
 brew cask install provisionql
 
